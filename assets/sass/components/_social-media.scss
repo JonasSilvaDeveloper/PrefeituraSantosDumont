@@ -1,0 +1,38 @@
+.social-media{
+  padding: 0 2rem;
+  border-left: 1px solid var(--color-primary-blue);
+  border-right: 1px solid var(--color-primary-blue);
+
+  &__list{
+    @include flex;
+
+    list-style: none;
+  }
+
+  &__item{
+
+    &:not(:last-child){
+      margin-right: 1.6rem;
+    }
+  }
+
+  &__link{
+    display: block;
+    text-decoration: none;
+
+    &:hover{
+      svg{
+        path{
+          fill: var(--color-second-orange);
+        }
+      }
+    }
+
+    svg{
+      path{
+        transition: .3s ease;
+        fill: var(--color-primary-blue);
+      }
+    }
+  }
+}

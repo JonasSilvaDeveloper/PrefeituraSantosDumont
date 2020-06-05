@@ -1,0 +1,37 @@
+.header{
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  padding: 2rem 0;
+
+  position: relative;
+  
+  &__wrapper{
+    @include flex;
+    @include justify-space-between;
+    @include align-center;
+  }
+
+  &__content{
+
+  }
+}
+
+.logo-header{
+  max-width: 31rem;
+  width: 100%;
+
+  @media screen and (max-width: 1200px){
+    max-width: 23rem;
+  }
+
+  &__link{
+    display: block;
+  }
+
+  &__image{
+    display: block;
+    width: 100%;
+  }
+}

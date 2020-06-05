@@ -1,14 +1,34 @@
+:root{
+    --font: 'Poppins', sans-serif;
+
+    --color-black: #000;
+    --color-white: #fff;
+
+    --color-primary-blue:#18204a;
+    --color-second-blue:#4154BA;
+    --color-third-blue:#A0AADC;
+    
+    --color-primary-orange:#7C3419;
+    --color-second-orange:#DA3D06;
+    --color-third-orange:#FCB499;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
 
 html{
     font-size: 62.5%;
 }
 
-body{
-    font-family: $font-principal;
+body,button,input{
+    font-family: var(--font);
     font-size: 1.6rem;
+}
+
+button{
+    cursor: pointer;
 }

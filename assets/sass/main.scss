@@ -6,10 +6,15 @@
 @import "base/animations";
 @import "base/typography";
 @import "base/utilities";
+@import "base/contrast";
 
 @import "layout/index";
 @import "layout/header";
 @import "layout/footer";
+
+@import "components/navigation";
+@import "components/search";
+@import "components/social-media";
 
 
 

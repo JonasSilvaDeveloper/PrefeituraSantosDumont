@@ -1,5 +1,26 @@
 .center{
-    max-width: 1200px;
-    width: 92%;
+    max-width: 1360px;
+    width: 90%;
     margin: 0 auto;
+}
+
+.search-active{
+    opacity: 1!important;
+    pointer-events: auto!important;
+}
+
+.btn-active{
+    span{
+        color: var(--color-second-orange)!important;
+    }
+    svg{
+        path{
+            stroke: var(--color-second-orange)!important;
+        }
+    }
+}
+
+.menu-active{
+    opacity: 1!important;
+    pointer-events: auto!important; 
 }
