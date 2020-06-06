@@ -6,6 +6,10 @@
   padding: 2rem 0;
 
   position: relative;
+
+  @include breakpoint(tablet-big){
+    display: none;
+  }
   
   &__wrapper{
     @include flex;

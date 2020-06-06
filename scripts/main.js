@@ -94,6 +94,10 @@ var structure = {
       $(this).toggleClass('btn-active');
       $('.menu').toggleClass('menu-active');
     })
+
+    $('.footer__title').click(function(){
+      $(this).parent().find('.footer__list').toggleClass('map-active');
+    })
     
     //AQUI VAI O CODIGO JS 
     console.log('Funcao JavaScript Página Structure');

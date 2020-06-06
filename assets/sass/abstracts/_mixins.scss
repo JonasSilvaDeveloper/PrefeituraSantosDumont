@@ -58,6 +58,9 @@
     @if $point == tablet {
         @media (max-width:$tablet) { @content }; //900px
     }
+    @if $point == tablet-big {
+        @media (max-width:$tablet-big) { @content }; //1000px
+    }
 
     @if $point == desktop {
         @media (max-width:$desktop) { @content }; //1200px

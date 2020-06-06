@@ -1,1 +1,246 @@
+.footer{
+  &__top{
+    padding: 4.7rem 0 4rem;
+    background-color: var(--color-primary-blue);
+  }
 
+  &__middle{
+    padding-top: 4.5rem;
+  }
+
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    @include breakpoint(tablet-big){
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    &--second{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+      border-bottom: 1px solid #ECECEC;
+      padding-bottom: 4.4rem;
+
+      @include breakpoint(tablet-big){
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include breakpoint(mobile){
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2.6rem;
+      }
+    }
+  }
+
+  &__column{
+    padding: 0 2rem;
+
+    @include breakpoint(tablet-big){
+      padding: 0;
+    }
+
+    &:not(:last-child){
+      border-right: 1px solid rgba(160, 170, 220,.2);
+      
+      @include breakpoint(tablet-big){
+        border: none;
+      }
+    }
+
+    &:first-child{
+      padding: 0;
+      padding-right: 2rem;
+
+      @include breakpoint(tablet-big){
+        padding: 0;
+
+        .footer__group:not(:first-child){
+          .footer__title{
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__group{
+    &:not(:last-child){
+      margin-bottom: 2.4rem;
+      @include breakpoint(tablet-big){
+        margin-bottom:0;
+        border-bottom: 1px solid rgba(160, 170, 220,.2);
+      }
+    }
+    &:first-child{
+      @include breakpoint(tablet-big){
+        border-top: 1px solid rgba(160, 170, 220,.2);
+      }
+    }
+
+    &--second{
+      @include flex;
+      @include align-center;
+
+      &:not(:last-child){
+        margin-bottom: 1rem;
+      }
+
+      svg{
+        margin-right: 1.3rem;
+      }
+    }
+  }
+
+  &__title{
+    @include flex;
+    @include align-center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--color-third-blue);
+    margin-bottom: .8rem;
+
+    @include breakpoint(tablet-big){
+      @include justify-space-between;
+      margin: 0;
+      padding: .8rem 1rem;
+    }
+
+    > svg{
+      margin-right: .5rem;
+
+      @include breakpoint(tablet-big){
+        order: 1;
+        margin-right: 0;
+        margin-left: .5rem;
+      }
+    }
+
+    &-section{
+      font-size: 2.4rem;
+      font-weight: 300;
+      line-height: 2.8rem;
+      color: var(--color-white);
+      margin-bottom: 3.1rem;
+    }
+
+    &--third{
+      @extend .footer__title;
+      color: var(--color-second-blue);
+
+      @include breakpoint(tablet-big){
+        padding: 0;
+      }
+    }
+  }
+
+  &__list{
+    list-style: none;
+
+    @include breakpoint(tablet-big){
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &--second{
+      list-style: none;
+      margin: .6rem 0;
+      margin-left: 1rem;
+    }
+  }
+
+  &__item{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--color-white);
+  }
+
+  &__link{
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--color-white);
+    transition: .3s ease;
+
+    &:hover{
+      color: var(--color-second-orange);
+    }
+
+    &--second{
+      @extend .footer__title;
+      transition: .3s ease;
+      text-decoration: none;
+      display: block;
+
+      @include breakpoint(tablet-big){
+        border: none;
+      }
+
+      &:hover{
+        color: var(--color-second-orange);
+      }
+    }
+  }
+
+  &__text{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-primary-blue);
+  }
+}
+
+.copyright{
+  padding: 1.7rem 0;
+  &__wrapper{
+    @include flex;
+    @include align-center;
+    @include justify-space-between;
+
+    @include breakpoint(tablet-big){
+      flex-direction: column;
+    }
+  }
+
+  &__text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--color-black);
+
+    @include breakpoint(tablet-big){
+      text-align: center;
+    }
+  }
+}
+
+.logo-footer{
+  @include breakpoint(tablet-big){
+    margin-bottom: 2rem;
+  }
+  &__group{
+    @include flex;
+    @include align-center;
+  }
+  &__text{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-primary-blue);
+    margin-left: 1.4rem;
+
+    strong{
+      @include breakpoint(mobile){
+        display: block;
+      }
+    }
+  }
+}
