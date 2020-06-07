@@ -1,7 +1,3 @@
-.homepage{
-
-}
-
 .slide{
   margin: 4rem 0; 
 
@@ -88,6 +84,35 @@
 
     &:hover{
       background-color: var(--color-second-orange);
+    }
+  }
+}
+
+.service{
+  background-color: var(--color-primary-blue);
+  padding: 3rem 0;
+  margin-bottom: 5rem;
+
+  &__title{
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 2.4rem;
+
+    @include breakpoint(tablet-big){
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 1.6rem;
+    }
+    @include breakpoint(mobile){
+      grid-template-columns: repeat(2,1fr);
     }
   }
 }

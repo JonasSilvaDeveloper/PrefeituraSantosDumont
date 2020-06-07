@@ -1,0 +1,39 @@
+.card-service{
+  @include flex;
+  @include align-center;
+  flex-direction: column;
+
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+
+  background-color: var(--color-white);
+  padding: 3rem 1.5rem;
+  border-radius: 1rem;
+  transition: .3s ease;
+
+  > svg{
+    margin-bottom: 2rem;
+  }
+
+  &:hover{
+    transform: translateY(-.5rem);
+
+    @include breakpoint(tablet-big){
+      transform: translateY(0);
+    }
+  }
+
+  &__title{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+    color: var(--color-primary-blue);
+    text-align: center;
+
+    @include breakpoint(tablet-big){
+      font-size: 1.6rem;
+      line-height: initial;
+    }
+  }
+}
