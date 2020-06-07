@@ -20,9 +20,18 @@
     }
 }
 
+.mobile-active{
+    transform: translateX(0)!important;
+}
+
 .menu-active{
     opacity: 1!important;
     pointer-events: auto!important; 
+}
+
+.menu-mobile-active{
+    position: relative!important;
+    opacity: 1!important;  
 }
 
 .map-active{

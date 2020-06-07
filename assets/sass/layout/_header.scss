@@ -7,9 +7,7 @@
 
   position: relative;
 
-  @include breakpoint(tablet-big){
-    display: none;
-  }
+  z-index: 99999;
   
   &__wrapper{
     @include flex;
@@ -18,7 +16,10 @@
   }
 
   &__content{
-
+    @include breakpoint(tablet-big){
+      @include flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -28,6 +29,10 @@
 
   @media screen and (max-width: 1200px){
     max-width: 23rem;
+  }
+
+  @include breakpoint(tablet-big){
+    max-width: 16rem;
   }
 
   &__link{

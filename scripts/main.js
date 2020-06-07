@@ -98,6 +98,22 @@ var structure = {
     $('.footer__title').click(function(){
       $(this).parent().find('.footer__list').toggleClass('map-active');
     })
+    $('.navigation__item').click(function(){
+      $('.submenu').removeClass('menu-mobile-active');
+    })
+
+    $('.navigation__item--mobile').click(function(){
+      if($('.submenu').hasClass('menu-mobile-active')){
+        $('.submenu').removeClass('menu-mobile-active');
+      }else{
+        $(this).find('.submenu').toggleClass('menu-mobile-active');
+
+      }
+    })
+
+    $('.navigation__btn-mobile').click(function(){
+      $('.navigation__list').toggleClass('mobile-active');
+    })
     
     //AQUI VAI O CODIGO JS 
     console.log('Funcao JavaScript Página Structure');
