@@ -123,11 +123,17 @@ var structure = {
 };
 
 // Função JavaScript da Página Home
-var home = {
+var slide = {
   init: function() {
 
-    //AQUI VAI O CODIGO JS 
-    console.log('Funcao JavaScript Página Home');
+    $('.slide__wrapper').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      fade: true,
+    })
     
   }
 };
