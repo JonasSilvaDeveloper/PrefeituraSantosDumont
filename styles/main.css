@@ -2,6 +2,7 @@
   --font: 'Poppins', sans-serif;
   --color-black: #000;
   --color-white: #fff;
+  --color-gray: #666;
   --color-primary-blue:#18204a;
   --color-second-blue:#4154BA;
   --color-third-blue:#A0AADC;
@@ -1032,6 +1033,80 @@ button {
   }
 }
 
+.card-newsHome {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  transition: .3s ease;
+  border-radius: .4rem;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.card-newsHome:hover {
+  transform: translateY(-0.5rem);
+}
+@media (max-width: 1000px) {
+  .card-newsHome:hover {
+    transform: translateY(0);
+  }
+}
+.card-newsHome__top {
+  border-radius: .4rem;
+}
+.card-newsHome__image {
+  width: 100%;
+  display: block;
+  border-radius: .4rem;
+}
+.card-newsHome__content {
+  padding: 2rem 2.4rem;
+  background-color: #F7F7F7;
+  border-radius: .4rem;
+}
+.card-newsHome__date {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--color-gray);
+  text-transform: uppercase;
+}
+.card-newsHome__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--color-black);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
+  position: relative;
+}
+.card-newsHome__title:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3.6rem;
+  height: .3rem;
+  border-radius: .3rem;
+  background-color: var(--color-second-blue);
+}
+.card-newsHome__description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--color-black);
+  margin-bottom: 1.6rem;
+}
+.card-newsHome__link {
+  display: block;
+  text-decoration: none;
+  transition: .3s ease;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--color-second-blue);
+}
+.card-newsHome__link:hover {
+  color: var(--color-second-orange);
+}
+
 .slide {
   margin: 4rem 0;
 }
@@ -1140,5 +1215,107 @@ button {
   .service__wrapper {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.news-home {
+  padding: 5rem 0;
+}
+.news-home__top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+@media (max-width: 600px) {
+  .news-home__top {
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+.news-home__bottom {
+  display: none;
+  margin-top: 2.4rem;
+}
+@media (max-width: 600px) {
+  .news-home__bottom {
+    display: block;
+  }
+}
+.news-home__title {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  color: var(--color-black);
+}
+.news-home__btn {
+  display: block;
+  text-decoration: none;
+  padding: .8rem 0;
+  width: 17rem;
+  transition: .3s ease;
+  border-radius: .4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  text-align: center;
+  background-color: var(--color-second-blue);
+  color: var(--color-white);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 600px) {
+  .news-home__btn {
+    display: none;
+  }
+}
+.news-home__btn:hover {
+  background-color: var(--color-second-orange);
+}
+.news-home__btn--mobile {
+  display: block;
+  text-decoration: none;
+  padding: .8rem 0;
+  width: 17rem;
+  transition: .3s ease;
+  border-radius: .4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  text-align: center;
+  background-color: var(--color-second-blue);
+  color: var(--color-white);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.news-home__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4.8rem;
+}
+@media screen and (max-width: 1280px) {
+  .news-home__wrapper {
+    grid-gap: 1.8rem;
+  }
+}
+@media (max-width: 1000px) {
+  .news-home__wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .news-home__wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .news-home__wrapper {
+    width: 100%;
   }
 }
