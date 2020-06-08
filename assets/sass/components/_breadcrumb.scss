@@ -1,0 +1,122 @@
+.breadcrumb{
+  padding: 1.1rem 0;
+  background-color: var(--color-primary-blue);
+
+  &__wrapper{
+    @include flex;
+    @include align-center;
+    @include justify-space-between;
+
+  }
+
+  &__info{
+
+  }
+
+  &__title{
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    color: var(--color-white);
+    margin-bottom: .5rem;
+  }
+
+  &__list{
+    @include flex;
+    @include align-center;
+
+    list-style: none;
+  }
+
+  &__item{
+    position: relative;
+
+
+    &:not(:last-child){
+      padding-right: 1rem;
+
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: .5rem;
+        right: 0;
+        width: .4rem;
+        height: .4rem;
+        border-radius: 50%;
+        background-color: var(--color-third-blue);
+      }
+    }
+
+    &:not(:first-child){
+      padding-left: .5rem;
+    }
+  }
+
+  &__link{
+    display: block;
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--color-third-blue);
+  }
+
+  &__text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--color-third-blue);
+
+    &--active{
+      @extend .breadcrumb__text;
+      color: var(--color-white);
+    }
+  }
+
+  &__buttons{
+
+  }
+
+  &__btn{
+    @include flex;
+    @include align-center;
+    @include justify-center;
+
+    text-decoration: none;
+    padding: .8rem 0;
+    width: 8.1rem;
+    border-radius: .4rem;
+    transition: .3s ease;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+
+    background-color: var(--color-white);
+    color: var(--color-second-blue);
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+
+    &:hover{
+      background-color: var(--color-second-orange);
+      color: var(--color-white);
+
+      svg{
+        path{
+          stroke: var(--color-white);
+        }
+      }
+    }
+
+    svg{
+      transition: .3s ease;
+      margin-right: .8rem;
+      path{
+        stroke: var(--color-second-blue);
+      }
+    }
+  }
+}
