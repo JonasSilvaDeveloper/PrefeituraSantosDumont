@@ -470,3 +470,42 @@
     }
   }
 }
+
+.navigation-intern{
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.2rem;
+  border-bottom: 1px solid #ECECEC;
+  &__list{
+    @include flex;
+    @include align-center;
+
+    list-style: none;
+  }
+
+  &__item{
+
+    &:not(:last-child){
+      padding-right: 2rem;
+      border-right: 1px solid var(--color-third-blue);
+    }
+
+    &:not(:first-child){
+      padding-left: 2rem;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    display: block;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--color-primary-blue);
+    transition: .3s ease;
+
+    &:hover{
+      color: var(--color-second-orange);
+    }
+  }
+}
