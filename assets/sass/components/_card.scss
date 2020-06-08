@@ -123,3 +123,62 @@
     }
   }
 }
+
+.card-bidding{
+  @include flex;
+  @include justify-space-between;
+  flex-direction: column;
+
+  min-height: 20.5rem;
+  padding: 2.7rem 3.2rem;
+
+  @include breakpoint(tablet){
+    padding: 2rem 1rem;
+  }
+
+  &__top{
+
+  }
+
+  &__title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--color-black);
+  }
+
+  &__date{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-gray);
+    margin-bottom: .8rem;
+  }
+
+  &__text{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-black);
+    margin-bottom: 1.6rem;
+  }
+
+  &__bottom{
+
+  }
+
+  &__btn{
+    display: block;
+    text-decoration: none;
+    transition: .3s ease;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--color-second-blue);
+
+    &:hover{
+      color: var(--color-second-orange);
+    }
+  }
+}

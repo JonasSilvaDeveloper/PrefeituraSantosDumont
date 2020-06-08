@@ -226,3 +226,130 @@
     }
   }
 }
+
+.bidding{
+  padding: 7rem 0;
+  background-color: #F7F7F7;
+
+  @include breakpoint(tablet){
+    padding: 3rem 0;
+  }
+  &__wrapper{
+    @include flex;
+    @include align-start;
+
+    @include breakpoint(tablet-big){
+      @include flex-wrap;
+    }
+
+    .sidebar{
+      flex: 0 0 30%;
+
+      @include breakpoint(tablet-big){
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  &__content{
+    flex: 1;
+    margin-right: 5rem;
+
+    @include breakpoint(tablet-big){
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__top{
+    @include flex;
+    @include align-center;
+    @include justify-space-between;
+
+    margin-bottom: 2.4rem;
+
+    @include breakpoint(mobile){
+      @include align-start;
+      // flex-direction: column;
+
+    }
+  }
+
+  &__title{
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    color: var(--color-black);
+  }
+
+  &__bottom{
+    display: none;
+    margin-top: 2.4rem;
+    
+    @include breakpoint(mobile){
+      display: block;
+    }
+  }
+
+  &__btn{
+    display: block;
+    text-decoration: none;
+    padding: .8rem 0;
+    width: 17rem;
+    transition: .3s ease;
+    border-radius: .4rem;
+    
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    text-align: center;
+
+    background-color: var(--color-second-blue);
+    color: var(--color-white);
+
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+
+        
+    @include breakpoint(mobile){
+      display: none;
+    }
+
+    &:hover{
+      background-color: var(--color-second-orange);
+    }
+
+    &--mobile{
+      display: block;
+      text-decoration: none;
+      padding: .8rem 0;
+      width: 17rem;
+      transition: .3s ease;
+      border-radius: .4rem;
+      
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.6rem;
+      text-align: center;
+  
+      background-color: var(--color-second-blue);
+      color: var(--color-white);
+  
+      -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+      box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    }
+  }
+
+  &__list{
+    list-style: none;
+  }
+
+  &__item{
+    
+    &:not(:last-child){
+      margin-bottom: 1rem;
+    }
+  }
+}
