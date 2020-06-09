@@ -2,6 +2,10 @@
   padding: 1.1rem 0;
   background-color: var(--color-primary-blue);
 
+  @include breakpoint(tablet){
+    padding: 2rem 0;
+  }
+
   &__wrapper{
     @include flex;
     @include align-center;
@@ -26,6 +30,10 @@
     @include align-center;
 
     list-style: none;
+
+    @include breakpoint(tablet){
+      display: none;
+    }
   }
 
   &__item{

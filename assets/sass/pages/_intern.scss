@@ -1,5 +1,5 @@
 .page{
-  margin: 6rem 0;
+  margin: 3rem 0 6rem;
   &__wrapper{
     @include flex;
     @include justify-space-between;
@@ -107,8 +107,8 @@
 
     padding: 2.4rem 0;
 
-    @include breakpoint(mobile){
-      flex-direction: column;
+    @include breakpoint(tablet){
+      display: none;
     }
 
     &:first-child{
@@ -118,7 +118,42 @@
     &:not(:last-child){
       border-bottom: 1px solid #ECECEC;
     }
+
+    &--mobile{
+      display: none;
+
+      padding: 2.4rem 0;
+
+      @include breakpoint(tablet){
+        display: block;
+      }
+
+      &:first-child{
+        border-top: 1px solid #ECECEC;
+      }
+  
+      &:not(:last-child){
+        border-bottom: 1px solid #ECECEC;
+      }
+    }
   }
+
+  &__row{
+    @include flex;
+
+    .mayors{
+      &__photo{
+        flex: 0 0 8rem;
+        margin-right: 1rem;
+        min-height: 8rem;
+      }
+    }
+  }
+
+  &__header{
+    flex: 1;
+  }
+
   &__photo{
     max-width: 18.4rem;
     width: 100%;
@@ -127,8 +162,8 @@
     border-radius: .4rem;
     background-color: var(--color-gray);
 
-    @include breakpoint(mobile){
-      margin-bottom: 2rem;
+    @include breakpoint(tablet){
+      margin-bottom: 1rem;
     }
   }
   &__image{
@@ -166,7 +201,9 @@
     color: var(--color-black);
   }
   &__bottom{
-
+    @include breakpoint(tablet){
+      margin-top: 2rem;
+    }
   }
   &__btn{
     text-decoration: none;
