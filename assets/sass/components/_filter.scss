@@ -1,5 +1,8 @@
 .filter{
   // background-color: #ccc;
+  padding-bottom: 2.4rem;
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid #ECECEC;
 
   &__row{
     @include flex;
