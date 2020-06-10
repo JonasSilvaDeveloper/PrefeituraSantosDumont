@@ -2180,3 +2180,80 @@ button {
         grid-template-columns: repeat(1, 1fr);
   }
 }
+.tourism__list {
+  margin: 3.2rem 0;
+  padding-bottom: 3.2rem;
+  border: 1px solid #ECECEC;
+  list-style: none;
+}
+.tourism__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.tourism__group:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.tourism__image {
+  width: 100%;
+  display: block;
+  border-radius: .4rem;
+}
+
+.secretary__item {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.5rem 0;
+}
+.secretary__item:first-child {
+  border-top: 1px solid #ECECEC;
+}
+.secretary__item:not(:last-child) {
+  border-bottom: 1px solid #ECECEC;
+}
+.secretary__icon {
+  -ms-flex: 0 0 18.4rem;
+      flex: 0 0 18.4rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .secretary__icon {
+    -ms-flex: 0 0 9rem;
+        flex: 0 0 9rem;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+.secretary__info {
+  -ms-flex: 1;
+      flex: 1;
+}
+.secretary__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+.secretary__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--color-black);
+  margin-bottom: 1.6rem;
+}
+.secretary__link {
+  text-decoration: none;
+  display: inline-block;
+  transition: .3s ease;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--color-second-blue);
+}
+.secretary__link:hover {
+  color: var(--color-second-orange);
+}
