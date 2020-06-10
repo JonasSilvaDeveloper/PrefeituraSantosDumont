@@ -1,0 +1,105 @@
+.filter{
+  // background-color: #ccc;
+
+  &__row{
+    @include flex;
+    @include align-end;
+    @include justify-space-between;
+
+    @include breakpoint(tablet){
+      display: block;
+    }
+  }
+
+  &__group{
+    position: relative;
+
+    &-20{
+      @extend .filter__group;
+      flex: 0 0 19%;
+
+      &:not(:last-child){
+        margin-right: 1rem;
+
+        @include breakpoint(tablet){
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+      }
+
+      @include breakpoint(tablet){
+        flex: 0 0 100%;
+      }
+    }
+
+    &-25{
+      @extend .filter__group;
+      flex: 0 0 24%;
+      margin-right: 1rem;
+      
+      @include breakpoint(tablet){
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &-35{
+      @extend .filter__group;
+      flex: 0 0 34%;
+      margin-right: 1rem;
+      
+      @include breakpoint(tablet){
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+  }
+
+  &__submit{
+    width: 100%;
+    padding: .8rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    border: none;
+    border-radius: .4rem;
+
+    color: var(--color-white);
+    background-color: var(--color-second-blue);
+  }
+
+  &__label{
+    display: block;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-primary-blue);
+    margin-bottom: .5rem;
+  }
+
+  &__input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: .7rem 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    
+    border: 1px solid #B7B7B7;
+    border-radius: .4rem;
+
+    color: var(--color-primary-blue);
+    background-color: var(--color-white);
+  }
+
+  &__select{
+    @extend .filter__input;
+    padding: .8rem 1rem;
+  }
+}

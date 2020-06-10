@@ -445,6 +445,11 @@
 }
 
 .secretary{
+  margin-right: 2.4rem;
+
+  @include breakpoint(tablet-big){
+    margin-right: 0;
+  }
 
   &__item{
     @include flex;
@@ -506,5 +511,46 @@
     &:hover{
       color: var(--color-second-orange);
     }
+  }
+
+  &__date{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-gray);
+    margin-bottom: .8rem;
+  }
+
+  &__btn{
+    @include flex;
+    @include align-center;
+    @include justify-center;
+
+    margin-top: 3.3rem;
+    padding: .8rem 0;
+
+    text-decoration: none;
+    width: 9.5rem;
+    transition: .3s ease;
+    border-radius: .4rem;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+
+    color: var(--color-white);
+    background-color: var(--color-second-blue);
+
+    &:hover{
+      background-color: var(--color-second-orange);
+    }
+
+    svg{
+      margin-left: .5rem;
+      path{
+        fill: var(--color-white);
+      }
+    }
+
   }
 }
