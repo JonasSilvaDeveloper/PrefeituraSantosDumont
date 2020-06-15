@@ -9,6 +9,7 @@
   --color-primary-orange:#7C3419;
   --color-second-orange:#DA3D06;
   --color-third-orange:#FCB499;
+  --color-second-green:#2B9B1F;
 }
 
 * {
@@ -2808,4 +2809,44 @@ button {
 }
 .secretary__btn svg path {
   fill: var(--color-white);
+}
+.secretary__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.7rem;
+}
+.secretary__number {
+  margin-left: 1.9rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: var(--color-black);
+}
+.secretary__status, .secretary__status-aberto, .secretary__status-aprovacao, .secretary__status-finalizado, .secretary__status-notVagas {
+  border: 1px solid;
+  padding: 0 .8rem;
+  border-radius: .4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.secretary__status-aberto {
+  border-color: var(--color-second-orange);
+  color: var(--color-second-orange);
+}
+.secretary__status-aprovacao {
+  border-color: var(--color-second-blue);
+  color: var(--color-second-blue);
+}
+.secretary__status-finalizado {
+  border-color: var(--color-second-green);
+  color: var(--color-second-green);
+}
+.secretary__status-notVagas {
+  border-color: var(--color-gray);
+  color: var(--color-gray);
 }

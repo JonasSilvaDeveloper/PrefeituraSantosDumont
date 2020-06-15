@@ -793,4 +793,54 @@
     }
 
   }
+
+  &__header{
+    @include flex;
+    @include align-center;
+    margin-bottom: 1.7rem;
+  }
+
+  &__number{
+    margin-left: 1.9rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--color-black);
+
+  }
+
+  &__status{
+    border: 1px solid;
+    padding: 0 .8rem;
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    &-aberto{
+      @extend .secretary__status;
+      border-color: var(--color-second-orange);
+      color: var(--color-second-orange);
+    }
+
+    &-aprovacao{
+      @extend .secretary__status;
+      border-color: var(--color-second-blue);
+      color: var(--color-second-blue);
+    }
+
+    &-finalizado{
+      @extend .secretary__status;
+      border-color: var(--color-second-green);
+      color: var(--color-second-green);
+    }
+
+    &-notVagas{
+      @extend .secretary__status;
+      border-color: var(--color-gray);
+      color: var(--color-gray);
+    }
+  }
 }
