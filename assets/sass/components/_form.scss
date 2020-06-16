@@ -1,3 +1,10 @@
+#form-envio{
+  padding: 3rem 0;
+  margin: 4rem 0;
+  border-top: 1px solid #F7F7F7;
+  border-bottom: 1px solid #F7F7F7;
+}
+
 .form{
 
   &--second{
@@ -23,6 +30,14 @@
     color: var(--color-primary-blue);
     text-transform: uppercase;
     margin-bottom: 1.8rem;
+
+    &--second{
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.6rem;
+      color: var(--color-black);
+      margin-bottom: 2.7rem;
+    }
   }
 
   &__row{
@@ -33,6 +48,65 @@
     @include breakpoint(tablet){
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 1.6rem;
+    }
+
+    &-flex{
+      @include flex;
+      @include align-end;
+      @include justify-space-between;
+
+      padding: 1.7rem 2.5rem;
+      border-radius: .8rem;
+      background-color: #F7F7F7;
+
+      @include breakpoint(tablet){
+        @include flex-wrap;
+        padding: 2.5rem 1.6rem;
+      }
+    }
+  }
+
+  &__group{
+    position: relative;
+
+    &--second{
+      margin: 2.4rem 0;
+    }
+
+    &-50{
+      @extend .form__group;
+      flex: 0 0 49%;
+
+      @include breakpoint(tablet){
+        flex: 0 0 100%;
+        margin-bottom: 1.6rem;
+      }
+    }
+    &-30{
+      @extend .form__group;
+      flex: 0 0 29%;
+
+      @include breakpoint(tablet){
+        flex: 0 0 100%;
+        margin-bottom: 1.6rem;
+      }
+    }
+    &-20{
+      @extend .form__group;
+      flex: 0 0 19%;
+
+      @include breakpoint(tablet){
+        flex: 0 0 100%;
+        margin-bottom: 1.6rem;
+      }
+
+      .form__submit{
+        max-width: none;
+
+        @include breakpoint(tablet){
+          max-width: 13rem;
+        }
+      }
     }
   }
 
@@ -62,6 +136,17 @@
 
   }
 
+  &__select{
+    @extend .form__input;
+    -o-appearance:none;
+  }
+
+  &__textarea{
+    @extend .form__input;
+    resize: none;
+    height: 20rem;
+  }
+
   &__bottom{
 
 
@@ -73,6 +158,26 @@
   }
 
   &__submit{
+    max-width: 13rem;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem .5rem;
+    transition: .3s ease;
+
+    border: none;
+    border-radius: .4rem;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+
+    background-color: var(--color-second-blue);
+    color: var(--color-white);
+
+    &:hover{
+      background-color: var(--color-second-orange);
+    }
 
     &--second{
       max-width: 26.8rem;
