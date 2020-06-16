@@ -17,6 +17,10 @@
   &__group{
     position: relative;
 
+    &-full{
+      flex: 0 0 100%;
+    }
+
     &-20{
       @extend .filter__group;
       flex: 0 0 19%;

@@ -1656,6 +1656,10 @@ button {
 .filter__group, .filter__group-20, .filter__group-25, .filter__group-35 {
   position: relative;
 }
+.filter__group-full {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+}
 .filter__group-20 {
   -ms-flex: 0 0 19%;
       flex: 0 0 19%;
@@ -3073,6 +3077,7 @@ button {
   font-weight: 400;
   line-height: 2.4rem;
   color: var(--color-black);
+  line-break: anywhere;
 }
 .contact__title {
   font-size: 2rem;
@@ -3093,4 +3098,11 @@ button {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+}
+.contact__item {
+  padding: 2.2rem 0;
+  border-bottom: 1px solid #f7f7f7;
+}
+.contact__item:first-child {
+  border-top: 1px solid #f7f7f7;
 }
