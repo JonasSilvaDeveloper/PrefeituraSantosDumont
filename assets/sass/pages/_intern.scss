@@ -172,6 +172,17 @@
         margin-bottom: .8rem;
       }
     }
+
+    &--third{
+      padding: 1.65rem 0;
+      border-top: 1px solid #ECECEC;
+    }
+
+    &--four{
+      padding: 1.65rem 0;
+      border-top: 1px solid #ECECEC;
+      border-bottom: 1px solid #ECECEC;
+    }
   }
 
   &__name{
@@ -230,6 +241,12 @@
       path{
         fill: var(--color-white);
       }
+    }
+
+    &--second{
+      @extend .intern__btn;
+      width: 12.6rem;
+      margin-bottom: 2.4rem;
     }
   }
 }
