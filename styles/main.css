@@ -1743,6 +1743,12 @@ button {
   border-bottom: 1px solid #F7F7F7;
 }
 
+#form-contato {
+  padding: 3rem 0;
+  margin: 3.2rem 0;
+  border-top: 1px solid #F7F7F7;
+}
+
 .form--second {
   width: 100%;
   padding: 2.5rem 3.1rem;
@@ -3054,6 +3060,8 @@ button {
 
 .contact {
   margin-right: 2.4rem;
+  -ms-flex: 1;
+      flex: 1;
 }
 @media (max-width: 1000px) {
   .contact {
@@ -3065,4 +3073,24 @@ button {
   font-weight: 400;
   line-height: 2.4rem;
   color: var(--color-black);
+}
+.contact__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+.contact__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.4rem;
+}
+@media (max-width: 768px) {
+  .contact__row {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
