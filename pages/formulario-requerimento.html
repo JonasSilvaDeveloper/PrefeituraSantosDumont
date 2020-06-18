@@ -1,0 +1,1294 @@
+<!doctype html>
+<html xml:lang="pt-br" lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="AM4 - A Internet de Resultados" />
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="../styles/slick.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="../styles/minify/main.min.css">
+	<title>Prefeitura Santos Dumont - Formulário Requerimento</title>
+</head>
+<body>
+  <header class="header">
+    <div class="center">
+      <div class="header__wrapper">
+        <div class="logo-header">
+          <a href="" class="logo-header__link">
+            <img src="../images/logo.png" alt="Logomarca da Prefeitura Municipal de Santos Dumont" class="logo-header__image">
+          </a>
+        </div>
+        <div class="header__content">
+          <nav class="navigation-top">
+            <ul class="navigation-top__list">
+              <li class="navigation-top__item">
+                <a href="" class="navigation-top__link">Acessibilidade</a>
+              </li>
+              <li class="navigation-top__item">
+                <div class="accessibility">
+                  <ul class="accessibility__list">
+                    <li class="accessibility__item">
+                      <a href="#altocontraste"  
+                        id="altocontraste" 
+                        accesskey="3" 
+                        onclick="window.toggleContrast()" 
+                        onkeydown="window.toggleContrast()" 
+                        class="accessibility__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                          <g id="Page-1" transform="translate(11.502 -0.002) rotate(45)">
+                            <g id="Dribbble-Light-Preview" transform="translate(0 0.003)">
+                              <g id="icons" transform="translate(0 0)">
+                                <path id="contrast-_908_" data-name="contrast-[#908]" d="M96.732,4051.735a6.505,6.505,0,0,1-9.2-9.2l.037-.035,9.2,9.2-.036.037m1.543.728a8.137,8.137,0,0,0,1.277-8.657,7.5,7.5,0,0,0-4.092-4.092,8.138,8.138,0,0,0-9.042,1.635l-.036.036a8.132,8.132,0,0,0,11.5,11.5l.036-.037h0c.124-.125.243-.252.358-.386" transform="translate(-84 -4039.003)" fill-rule="evenodd"/>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="accessibility__item">
+                      <button type="button" id="btnPlus" class="accessibility__button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23">
+                          <text id="A_" data-name="A+" transform="translate(0 17)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">A+</tspan></text>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="accessibility__item">
+                      <button type="button" id="btnMenus" class="accessibility__button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                          <text id="A-" transform="translate(0 17)" font-size="16" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">A-</tspan></text>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navigation-top__item">
+                <div class="social-media">
+                  <ul class="social-media__list">
+                    <li class="social-media__item">
+                      <a href="" class="social-media__link" target="_blank">
+                        <svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" width="7.427" height="13.737" viewBox="0 0 7.427 13.737">
+                          <path id="Caminho_11" data-name="Caminho 11" d="M29.224,0,27.443,0a3.128,3.128,0,0,0-3.295,3.381V4.939H22.357a.28.28,0,0,0-.28.28V7.478a.28.28,0,0,0,.28.28h1.791v5.7a.28.28,0,0,0,.28.28h2.337a.28.28,0,0,0,.28-.28v-5.7h2.094a.28.28,0,0,0,.28-.28V5.219a.28.28,0,0,0-.28-.28H27.045V3.618c0-.635.151-.957.979-.957h1.2a.28.28,0,0,0,.28-.28V.283A.28.28,0,0,0,29.224,0Z" transform="translate(-22.077)" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-media__item">
+                      <a href="" class="social-media__link" target="_blank">
+                        <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="15.429" height="15.432" viewBox="0 0 15.429 15.432">
+                          <path id="Caminho_1959" data-name="Caminho 1959" d="M15.838,4.537a5.639,5.639,0,0,0-.359-1.872A3.953,3.953,0,0,0,13.221.407,5.653,5.653,0,0,0,11.349.048C10.523.009,10.261,0,8.166,0S5.809.009,4.986.045A5.64,5.64,0,0,0,3.114.4,3.765,3.765,0,0,0,1.745,1.3,3.8,3.8,0,0,0,.856,2.662,5.654,5.654,0,0,0,.5,4.534C.458,5.36.449,5.622.449,7.717s.009,2.357.045,3.18A5.638,5.638,0,0,0,.853,12.77,3.952,3.952,0,0,0,3.11,15.028a5.654,5.654,0,0,0,1.872.359c.823.036,1.085.045,3.18.045s2.357-.009,3.18-.045a5.637,5.637,0,0,0,1.872-.359,3.947,3.947,0,0,0,2.258-2.258,5.658,5.658,0,0,0,.359-1.872c.036-.823.045-1.085.045-3.18s0-2.357-.039-3.18Zm-1.39,6.3a4.23,4.23,0,0,1-.265,1.432,2.56,2.56,0,0,1-1.465,1.465A4.245,4.245,0,0,1,11.286,14c-.814.036-1.058.045-3.117.045S5.863,14.036,5.052,14a4.228,4.228,0,0,1-1.432-.265,2.375,2.375,0,0,1-.886-.576,2.4,2.4,0,0,1-.576-.886,4.245,4.245,0,0,1-.265-1.432c-.036-.814-.045-1.058-.045-3.117s.009-2.306.045-3.117a4.228,4.228,0,0,1,.265-1.432,2.346,2.346,0,0,1,.579-.886,2.4,2.4,0,0,1,.886-.576,4.248,4.248,0,0,1,1.432-.265C5.869,1.411,6.113,1.4,8.172,1.4s2.306.009,3.117.045a4.23,4.23,0,0,1,1.432.265,2.373,2.373,0,0,1,.886.576,2.4,2.4,0,0,1,.576.886,4.247,4.247,0,0,1,.265,1.432c.036.814.045,1.058.045,3.117s-.009,2.3-.045,3.114Zm0,0" transform="translate(-0.449 0)" />
+                          <path id="Caminho_1960" data-name="Caminho 1960" d="M128.913,124.5a3.964,3.964,0,1,0,3.964,3.964A3.965,3.965,0,0,0,128.913,124.5Zm0,6.536a2.571,2.571,0,1,1,2.571-2.571A2.572,2.572,0,0,1,128.913,131.036Zm0,0" transform="translate(-121.196 -120.747)" />
+                          <path id="Caminho_1961" data-name="Caminho 1961" d="M364.3,89.527a.926.926,0,1,1-.926-.925A.926.926,0,0,1,364.3,89.527Zm0,0" transform="translate(-351.537 -85.931)" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-media__item">
+                      <a href="" class="social-media__link" target="_blank">
+                        <svg id="twitter-logo-silhouette" xmlns="http://www.w3.org/2000/svg" width="15.234" height="12.374" viewBox="0 0 15.234 12.374">
+                          <g id="Grupo_26" data-name="Grupo 26" transform="translate(0 0)">
+                            <path id="Caminho_16" data-name="Caminho 16" d="M15.235,58.905a6.241,6.241,0,0,1-1.794.492,3.138,3.138,0,0,0,1.374-1.728,6.3,6.3,0,0,1-1.986.759A3.128,3.128,0,0,0,7.5,61.277a8.872,8.872,0,0,1-6.441-3.265,3.129,3.129,0,0,0,.967,4.171,3.126,3.126,0,0,1-1.416-.392v.039a3.128,3.128,0,0,0,2.506,3.064A3.165,3.165,0,0,1,2.3,65a3,3,0,0,1-.588-.058,3.127,3.127,0,0,0,2.919,2.17A6.27,6.27,0,0,1,.746,68.452,6.642,6.642,0,0,1,0,68.409a8.834,8.834,0,0,0,4.79,1.406,8.83,8.83,0,0,0,8.891-8.891l-.01-.4A6.24,6.24,0,0,0,15.235,58.905Z" transform="translate(-0.001 -57.441)" />
+                          </g>
+                        </svg>                        
+                      </a>
+                    </li>
+                    <li class="social-media__item">
+                      <a href="" class="social-media__link" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.27" height="12.092" viewBox="0 0 17.27 12.092">
+                          <path id="youtube_3_" data-name="youtube (3)" d="M16.915-4.19a2.164,2.164,0,0,0-1.522-1.522,50.551,50.551,0,0,0-6.757-.37,52.521,52.521,0,0,0-6.757.356A2.207,2.207,0,0,0,.356-4.19,22.8,22.8,0,0,0,0-.036,22.714,22.714,0,0,0,.356,4.118,2.164,2.164,0,0,0,1.879,5.64a50.643,50.643,0,0,0,6.757.37,52.521,52.521,0,0,0,6.757-.356,2.164,2.164,0,0,0,1.522-1.522,22.806,22.806,0,0,0,.356-4.154,21.641,21.641,0,0,0-.356-4.168Zm-10,6.743V-2.625l4.5,2.589Zm0,0" transform="translate(-0.001 6.082)" />
+                        </svg>                        
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navigation-top__item">
+                <div class="search-top">
+                  <button class="search-top__button">
+                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <g id="search">
+                        <rect id="Retângulo_924" data-name="Retângulo 924" width="24" height="24" fill="#202a5c" opacity="0"/>
+                        <path id="Caminho_1969" data-name="Caminho 1969" d="M20.71,19.29l-3.4-3.39A7.92,7.92,0,0,0,19,11a8,8,0,1,0-8,8,7.92,7.92,0,0,0,4.9-1.69l3.39,3.4a1,1,0,1,0,1.42-1.42ZM5,11a6,6,0,1,1,6,6,6,6,0,0,1-6-6Z" fill="#202a5c"/>
+                      </g>
+                    </svg>
+                  </button>
+                  <div class="search-top__content">
+                    <form class="search-top__form">
+                      <div class="search-top__group">
+                        <input type="text" class="search-top__input" placeholder="Buscar . . .">
+                        <button type="submit" class="search-top__submit">
+                          <svg id="Layer" enable-background="new 0 0 64 64" width="18" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m37.38 12.552c-.799-.761-2.064-.731-2.828.068-.762.8-.731 2.066.068 2.828l15.341 14.552h-39.961c-1.104 0-2 .896-2 2s.896 2 2 2h39.892l-15.272 14.552c-.8.762-.83 2.028-.068 2.828.393.412.921.62 1.448.62.496 0 .992-.183 1.38-.552l17.445-16.625c.758-.758 1.175-1.76 1.175-2.823s-.417-2.065-1.21-2.858z"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="" class="navigation__link">
+                  Requerimentos e Publicações
+                </a>
+              </li>
+              <li class="navigation__item">
+                Ações e Programas
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <path id="Caminho_1968" data-name="Caminho 1968" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(-7.979 -10)"/>
+                </svg>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Recadastramento</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Autorização RPS</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Contratação Temp. - Des Social</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Formulário de Requerimento</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">E-sic</a>
+              </li>
+              <li class="navigation__item">
+                Portais
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <path id="Caminho_1968" data-name="Caminho 1968" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(-7.979 -10)"/>
+                </svg>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Portal do Fornecedor</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Portal do Servidor</a>
+                  </li>
+                  <li class="submenu__item--second">
+                    <input type="checkbox" class="submenu__check" id="portal-servicos">
+                    <label for="portal-servicos" class="submenu__label-check">
+                      Portal de Serviços 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                        <path id="Caminho_1968" data-name="Caminho 1968" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(-7.979 -10)"/>
+                      </svg>
+                    </label>
+                    <ul class="submenu--second">
+                      <li class="submenu__item">
+                        <a href="" class="submenu__link">IPTU</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="" class="submenu__link">Nota Fiscal Eletrônica</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="" class="submenu__link">Plano Diretor</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Portal de Empregos</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Estágio</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Webmail</a>
+              </li>
+              <li class="navigation__item--mobile">
+                Cidade
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <path id="Caminho_1968" data-name="Caminho 1968" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(-7.979 -10)"/>
+                </svg>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="cidade-municipio.html" class="submenu__link">Município</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Histórico</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Executivo</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Projetos e Obras</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Calendários e Eventos</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Turismo e Lazer</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item--mobile">
+                Administração
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <path id="Caminho_1968" data-name="Caminho 1968" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(-7.979 -10)"/>
+                </svg>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Estrutura Organizacional</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Gabinete</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Secretarias</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item--mobile">
+                Transparência
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <path id="Caminho_1968" data-name="Caminho 1968" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(-7.979 -10)"/>
+                </svg>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Transparência Municipal</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Transferência  do Estado</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Transferência  da União</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Minas Transparente</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Legislação</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Editais e Licitações</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item--mobile">
+                Mídias
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <path id="Caminho_1968" data-name="Caminho 1968" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(-7.979 -10)"/>
+                </svg>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Galeria de Fotos</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Eventos Realizados</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Vídeos</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item--mobile">
+                Contato
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <path id="Caminho_1968" data-name="Caminho 1968" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(-7.979 -10)"/>
+                </svg>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Ouvidoria</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Telefones Úteis</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Fale com a Prefeitura</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation__item--mobile">
+                <a href="" class="menu__link">Concursos</a>
+              </li>
+              <li class="navigation__item--mobile">
+                <a href="" class="menu__link">Notícias</a>
+              </li>
+              <li class="navigation__item--mobile">
+                <ul class="navigation-top__list">
+                  <li class="navigation-top__item">
+                    <a href="" class="navigation-top__link">Acessibilidade</a>
+                  </li>
+                  <li class="navigation-top__item">
+                    <div class="accessibility">
+                      <ul class="accessibility__list">
+                        <li class="accessibility__item">
+                          <a href="#altocontraste"  
+                            id="altocontraste" 
+                            accesskey="3" 
+                            onclick="window.toggleContrast()" 
+                            onkeydown="window.toggleContrast()" 
+                            class="accessibility__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                              <g id="Page-1" transform="translate(11.502 -0.002) rotate(45)">
+                                <g id="Dribbble-Light-Preview" transform="translate(0 0.003)">
+                                  <g id="icons" transform="translate(0 0)">
+                                    <path id="contrast-_908_" data-name="contrast-[#908]" d="M96.732,4051.735a6.505,6.505,0,0,1-9.2-9.2l.037-.035,9.2,9.2-.036.037m1.543.728a8.137,8.137,0,0,0,1.277-8.657,7.5,7.5,0,0,0-4.092-4.092,8.138,8.138,0,0,0-9.042,1.635l-.036.036a8.132,8.132,0,0,0,11.5,11.5l.036-.037h0c.124-.125.243-.252.358-.386" transform="translate(-84 -4039.003)" fill-rule="evenodd"/>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navigation-top__item">
+                    <div class="social-media">
+                      <ul class="social-media__list">
+                        <li class="social-media__item">
+                          <a href="" class="social-media__link" target="_blank">
+                            <svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" width="7.427" height="13.737" viewBox="0 0 7.427 13.737">
+                              <path id="Caminho_11" data-name="Caminho 11" d="M29.224,0,27.443,0a3.128,3.128,0,0,0-3.295,3.381V4.939H22.357a.28.28,0,0,0-.28.28V7.478a.28.28,0,0,0,.28.28h1.791v5.7a.28.28,0,0,0,.28.28h2.337a.28.28,0,0,0,.28-.28v-5.7h2.094a.28.28,0,0,0,.28-.28V5.219a.28.28,0,0,0-.28-.28H27.045V3.618c0-.635.151-.957.979-.957h1.2a.28.28,0,0,0,.28-.28V.283A.28.28,0,0,0,29.224,0Z" transform="translate(-22.077)" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social-media__item">
+                          <a href="" class="social-media__link" target="_blank">
+                            <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="15.429" height="15.432" viewBox="0 0 15.429 15.432">
+                              <path id="Caminho_1959" data-name="Caminho 1959" d="M15.838,4.537a5.639,5.639,0,0,0-.359-1.872A3.953,3.953,0,0,0,13.221.407,5.653,5.653,0,0,0,11.349.048C10.523.009,10.261,0,8.166,0S5.809.009,4.986.045A5.64,5.64,0,0,0,3.114.4,3.765,3.765,0,0,0,1.745,1.3,3.8,3.8,0,0,0,.856,2.662,5.654,5.654,0,0,0,.5,4.534C.458,5.36.449,5.622.449,7.717s.009,2.357.045,3.18A5.638,5.638,0,0,0,.853,12.77,3.952,3.952,0,0,0,3.11,15.028a5.654,5.654,0,0,0,1.872.359c.823.036,1.085.045,3.18.045s2.357-.009,3.18-.045a5.637,5.637,0,0,0,1.872-.359,3.947,3.947,0,0,0,2.258-2.258,5.658,5.658,0,0,0,.359-1.872c.036-.823.045-1.085.045-3.18s0-2.357-.039-3.18Zm-1.39,6.3a4.23,4.23,0,0,1-.265,1.432,2.56,2.56,0,0,1-1.465,1.465A4.245,4.245,0,0,1,11.286,14c-.814.036-1.058.045-3.117.045S5.863,14.036,5.052,14a4.228,4.228,0,0,1-1.432-.265,2.375,2.375,0,0,1-.886-.576,2.4,2.4,0,0,1-.576-.886,4.245,4.245,0,0,1-.265-1.432c-.036-.814-.045-1.058-.045-3.117s.009-2.306.045-3.117a4.228,4.228,0,0,1,.265-1.432,2.346,2.346,0,0,1,.579-.886,2.4,2.4,0,0,1,.886-.576,4.248,4.248,0,0,1,1.432-.265C5.869,1.411,6.113,1.4,8.172,1.4s2.306.009,3.117.045a4.23,4.23,0,0,1,1.432.265,2.373,2.373,0,0,1,.886.576,2.4,2.4,0,0,1,.576.886,4.247,4.247,0,0,1,.265,1.432c.036.814.045,1.058.045,3.117s-.009,2.3-.045,3.114Zm0,0" transform="translate(-0.449 0)" />
+                              <path id="Caminho_1960" data-name="Caminho 1960" d="M128.913,124.5a3.964,3.964,0,1,0,3.964,3.964A3.965,3.965,0,0,0,128.913,124.5Zm0,6.536a2.571,2.571,0,1,1,2.571-2.571A2.572,2.572,0,0,1,128.913,131.036Zm0,0" transform="translate(-121.196 -120.747)" />
+                              <path id="Caminho_1961" data-name="Caminho 1961" d="M364.3,89.527a.926.926,0,1,1-.926-.925A.926.926,0,0,1,364.3,89.527Zm0,0" transform="translate(-351.537 -85.931)" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social-media__item">
+                          <a href="" class="social-media__link" target="_blank">
+                            <svg id="twitter-logo-silhouette" xmlns="http://www.w3.org/2000/svg" width="15.234" height="12.374" viewBox="0 0 15.234 12.374">
+                              <g id="Grupo_26" data-name="Grupo 26" transform="translate(0 0)">
+                                <path id="Caminho_16" data-name="Caminho 16" d="M15.235,58.905a6.241,6.241,0,0,1-1.794.492,3.138,3.138,0,0,0,1.374-1.728,6.3,6.3,0,0,1-1.986.759A3.128,3.128,0,0,0,7.5,61.277a8.872,8.872,0,0,1-6.441-3.265,3.129,3.129,0,0,0,.967,4.171,3.126,3.126,0,0,1-1.416-.392v.039a3.128,3.128,0,0,0,2.506,3.064A3.165,3.165,0,0,1,2.3,65a3,3,0,0,1-.588-.058,3.127,3.127,0,0,0,2.919,2.17A6.27,6.27,0,0,1,.746,68.452,6.642,6.642,0,0,1,0,68.409a8.834,8.834,0,0,0,4.79,1.406,8.83,8.83,0,0,0,8.891-8.891l-.01-.4A6.24,6.24,0,0,0,15.235,58.905Z" transform="translate(-0.001 -57.441)" />
+                              </g>
+                            </svg>                        
+                          </a>
+                        </li>
+                        <li class="social-media__item">
+                          <a href="" class="social-media__link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17.27" height="12.092" viewBox="0 0 17.27 12.092">
+                              <path id="youtube_3_" data-name="youtube (3)" d="M16.915-4.19a2.164,2.164,0,0,0-1.522-1.522,50.551,50.551,0,0,0-6.757-.37,52.521,52.521,0,0,0-6.757.356A2.207,2.207,0,0,0,.356-4.19,22.8,22.8,0,0,0,0-.036,22.714,22.714,0,0,0,.356,4.118,2.164,2.164,0,0,0,1.879,5.64a50.643,50.643,0,0,0,6.757.37,52.521,52.521,0,0,0,6.757-.356,2.164,2.164,0,0,0,1.522-1.522,22.806,22.806,0,0,0,.356-4.154,21.641,21.641,0,0,0-.356-4.168Zm-10,6.743V-2.625l4.5,2.589Zm0,0" transform="translate(-0.001 6.082)" />
+                            </svg>                        
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button class="navigation__menu">
+              <span>Menu</span>
+              <svg id="Page-1" xmlns="http://www.w3.org/2000/svg" width="22.666" height="15.778" viewBox="0 0 22.666 15.778">
+                <g id="Artboard" transform="translate(1 1)">
+                  <g id="menu">
+                    <path id="Shape" d="M0,6H20.666" transform="translate(0 0.889)" fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+                    <path id="Shape-2" data-name="Shape" d="M0,0H20.666" fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+                    <path id="Shape-3" data-name="Shape" d="M0,12H20.666" fill="none" transform="translate(0 1.778)" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+                  </g>
+                </g>
+              </svg>
+            </button>
+
+            <button class="navigation__btn-mobile">
+              <svg id="Page-1" xmlns="http://www.w3.org/2000/svg" width="22.666" height="15.778" viewBox="0 0 22.666 15.778">
+                <g id="Artboard" transform="translate(1 1)">
+                  <g id="menu">
+                    <path id="Shape" d="M0,6H20.666" transform="translate(0 0.889)" fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+                    <path id="Shape-2" data-name="Shape" d="M0,0H20.666" fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+                    <path id="Shape-3" data-name="Shape" d="M0,12H20.666" fill="none" transform="translate(0 1.778)" stroke-linecap="square" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <div class="menu">
+              <div class="center">
+                <div class="menu__content">
+                  <div class="menu__wrapper">
+                    <div class="menu__column">
+                      <h3 class="menu__title">Cidade</h3>
+                      <ul class="menu__list">
+                        <li class="menu__item">
+                          <a href="cidade-municipio.html" class="menu__link">Município</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Histórico</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Executivo</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Projetos e Obras</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Calendários e Eventos</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Turismo e Lazer</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="menu__column">
+                      <h3 class="menu__title">Administração</h3>
+                      <ul class="menu__list">
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Estrutura Organizacional</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Gabinete</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Secretarias</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="menu__column">
+                      <h3 class="menu__title">Transparência</h3>
+                      <ul class="menu__list">
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Transparência Municipal</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Transferência  do Estado</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Transferência  da União</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Minas Transparente</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Legislação</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Editais e Licitações</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="menu__column">
+                      <h3 class="menu__title">Mídias</h3>
+                      <ul class="menu__list">
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Galeria de Fotos</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Eventos Realizados</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Vídeos</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="menu__column">
+                      <h3 class="menu__title">Contato</h3>
+                      <ul class="menu__list">
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Ouvidoria</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Telefones Úteis</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Fale com a Prefeitura</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="menu__column">
+                      <ul class="menu__list">
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Concursos</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="" class="menu__link">Notícias</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="breadcrumb">
+      <div class="center">
+        <div class="breadcrumb__wrapper">
+          <div class="breadcrumb__info">
+            <h2 class="breadcrumb__title">Formulário de Requerimento</h2>
+            <ul class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a href="home.html" class="breadcrumb__link">Home</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="requerimentos-e-publicacoes.html" class="breadcrumb__link">Requerimento e Publicações</a>
+              </li>
+              <li class="breadcrumb__item">
+                <p class="breadcrumb__text--active">Formulário de Requerimento</p>
+              </li>
+            </ul>
+          </div>
+          <div class="breadcrumb__buttons">
+            <a href="home.html" class="breadcrumb__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="6.414" height="10.828" viewBox="0 0 6.414 10.828">
+                <path id="Caminho_2013" data-name="Caminho 2013" d="M8,0,4,4,0,0" transform="translate(5 1.414) rotate(90)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+              </svg>
+              <span>Voltar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="center">
+        <div class="page__wrapper">
+          <div class="requerimento">
+            <div class="requerimento__item">
+              <h2 class="requerimento__title">
+                Abertura de ISS (autônomo):
+              </h2>
+              <p class="requerimento__doc">
+                Documentos necessários
+              </p>
+              <p class="requerimento__text">
+                - <span>Requerimento de protocolo</span> devidamente preenchido com a descrição da atividade e assinado pelo requerente;
+                <br/>
+                - Cópia CPF e RG;
+                <br/>
+                - Cópia Carteira do Conselho profissional ou diploma (caso seja curso superior ou técnico);
+                <br/>
+                - Cópia do comprovante de residência no município.
+              </p>
+              <div class="intern__row--second">
+                <p class="intern__text">Requerimento de Protocolo</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="requerimento__item">
+              <h2 class="requerimento__title">
+                Nota Fiscal Avulsa (prestador de serviço pessoa física):
+              </h2>
+              <p class="requerimento__doc">
+                Documentos necessários
+              </p>
+              <p class="requerimento__text">
+                - <span>Requerimento de nota fiscal</span> devidamente preenchido;
+                <br/>
+                - Cópia de CPF e RG do prestador
+              </p>
+              <div class="intern__row--second">
+                <p class="intern__text">Requerimento de Protocolo</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="requerimento__obs">
+                OBS: O prestador devera ter cadastro de ISS regularizado no município.
+              </p>
+            </div>
+
+            <div class="requerimento__item">
+              <h2 class="requerimento__title">
+                ITBI:
+              </h2>
+              <p class="requerimento__doc">
+                Documentos necessários
+              </p>
+              <p class="requerimento__text">
+                - <span>Requerimento de protocolo</span> devidamente preenchido e assinado pelo adquirente do imóvel;
+                <br/>
+                - <span>Guia de ITBI</span> devidamente preenchida ate o item matricula (em duas vias);
+                <br/>
+                - Cópia da certidão do imóvel (atualizada, máximo seis meses da data do requerimento);
+                <br/>
+                - Cópia do CPF e RG do comprador e Vendedor (pessoa física);
+                <br/>
+                - Cópia do Contrato social do comprador ou vendedor (pessoa Jurídica);
+                <br/>
+                - Cópia do IPTU (caso o imóvel seja urbano, atualizada);
+                <br/>
+                - Cópia do ITR (caso o imóvel seja rural, atualizada);
+                <br/>
+                - Caso o imóvel for financiado trazer copia do contrato.
+              </p>
+              <div class="intern__row--second">
+                <p class="intern__text">Requerimento de Protocolo</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Guia de ITBI</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="requerimento__item">
+              <h2 class="requerimento__title">
+                Alvará de Funcionamento e Localização (pessoa jurídica):
+              </h2>
+              <p class="requerimento__doc">
+                Documentos necessários
+              </p>
+              <p class="requerimento__text">
+                - <span>Requerimento de protocolo</span> devidamente preenchido e assinado pelo proprietário da empresa;
+                <br/>
+                - <span>Termo de responsabilidade e compromisso</span> devidamente preenchido e assinado pelo proprietário da empresa;
+                <br/>
+                - <span>Declaração</span> devidamente preenchida pelo proprietário do imóvel juntamente com o proprietário da empresa sendo assinada pelo dono de do imóvel (caso imóvel seja alugado); Quando no contrato de locação esteja especificado as atividades da empresa não será necessário esta declaração. 
+                <br/>
+                - <span>Declaração de cessão de uso do imóvel</span> devidamente preenchido pelo proprietário do imóvel juntamente com o proprietário da empresa, assinada pelo dono do imóvel, (caso o proprietário ceda o espaço a empresa), juntamente com a cópia da escritura do imóvel;
+                <br/>
+                - <span>Licença de publicidade</span> devidamente preenchido pelo proprietário da empresa ( caso a empresa tenha placa de publicidade exposta);
+                <br/>
+                - Cópia do Cartão do CNPJ;
+                <br/>
+                - Cópia do Contrato social com a Viabilidade da Junca comercial;
+                <br/>
+                - Cópia do Certificado de MEI (caso Micro empresário individual);
+                <br/>
+                - Cópia do CPF e RG do proprietário da empresa;
+                <br/>
+                - Cópia do CPF e RG do proprietário do imóvel;
+                <br/>
+                - Cópia do IPTU (caso o imóvel seja urbano, atualizada);
+                <br/>
+                - Cópia do ITR (caso o imóvel seja rural, atualizada);
+              </p>
+              <div class="intern__row--second">
+                <p class="intern__text">Requerimento de Protocolo</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Termo de responsabilidade e compromisso</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Declaração </p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Declaração de cessão de uso do imóvel</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Licença de publicidade</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+
+              <p class="requerimento__obs">
+                OBS: Para qualquer alteração no cartão do CNPJ, a empresa que já possui alvará liberado junto a prefeitura, será necessário a entrada de toda a documentação acima descrita.
+              </p>
+            </div>
+            <div class="requerimento__item">
+              <h2 class="requerimento__title">
+                Alvará de Funcionamento e Localização (pessoa física):
+              </h2>
+              <p class="requerimento__doc">
+                Documentos necessários
+              </p>
+              <p class="requerimento__text">
+                - <span>Requerimento de protocolo</span> devidamente preenchido e assinado pelo proprietário da empresa;
+                <br/>
+                - <span>Termo de responsabilidade e compromisso</span> devidamente preenchido e assinado pelo proprietário da empresa;
+                <br/>
+                - <span>Declaração</span> devidamente preenchida pelo proprietário do imóvel juntamente com o empresário, sendo assinada pelo dono de do imóvel (caso imóvel seja alugado); Quando no contrato de locação esteja especificado as atividades da empresa não será necessário esta declaração.
+                <br/>
+                - <span>Declaração de cessão de uso do imóvel</span> devidamente preenchido pelo proprietário do imóvel juntamente com o empresário, assinada pelo dono do imóvel, (caso o proprietário ceda o espaço a empresa), juntamente com a cópia da escritura do imóvel;
+                <br/>
+                - <span>Licença de publicidade</span> devidamente preenchido pelo empresário ( caso a empresa tenha placa de publicidade exposta);
+                <br/>
+                - Cópia do CPF e RG do empresário;
+                <br/>
+                - Cópia do CPF e RG do proprietário do imóvel;
+              </p>
+              <div class="intern__row--second">
+                <p class="intern__text">Requerimento de Protocolo</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Termo de responsabilidade e compromisso</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Declaração </p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Declaração de cessão de uso do imóvel</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="intern__row--second">
+                <p class="intern__text">Licença de publicidade</p>
+                <a href="" class="intern__btn">
+                  Baixar
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.083" height="16.089" viewBox="0 0 15.083 16.089">
+                    <g id="download_2_" data-name="download (2)" transform="translate(-16)">
+                      <g id="Grupo_3034" data-name="Grupo 3034" transform="translate(19.519)">
+                        <g id="Grupo_3033" data-name="Grupo 3033" transform="translate(0)">
+                          <path id="Caminho_2095" data-name="Caminho 2095" d="M136,7.333a.5.5,0,0,0-.458-.295h-2.011V.5a.5.5,0,0,0-.5-.5h-2.011a.5.5,0,0,0-.5.5V7.039H128.5a.5.5,0,0,0-.378.834l3.519,4.022a.5.5,0,0,0,.756,0l3.519-4.022A.5.5,0,0,0,136,7.333Z" transform="translate(-127.998)"/>
+                        </g>
+                      </g>
+                      <g id="Grupo_3036" data-name="Grupo 3036" transform="translate(16 11.061)">
+                        <g id="Grupo_3035" data-name="Grupo 3035" transform="translate(0)">
+                          <path id="Caminho_2096" data-name="Caminho 2096" d="M29.072,352v3.017H18.011V352H16v4.022a1,1,0,0,0,1.006,1.006H30.078a1,1,0,0,0,1.006-1.006V352Z" transform="translate(-16 -352)"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>           
+          </div>
+          
+          <div class="sidebar">
+            <h2 class="sidebar__title">Notícias</h2>
+            <ul class="sidebar__list">
+              <li class="sidebar__item-news">
+                <a href="" class="sidebar__item-news--link">
+                  <p class="sidebar__item-news--date">31 Maio 2020</p>
+                  <h3 class="sidebar__item-news--title">Resultado prévio do Processo Seletivo - Edital 001/2020</h3>
+                </a>
+              </li>
+              <li class="sidebar__item-news">
+                <a href="" class="sidebar__item-news--link">
+                  <p class="sidebar__item-news--date">31 Maio 2020</p>
+                  <h3 class="sidebar__item-news--title">Resultado prévio do Processo Seletivo - Edital 001/2020</h3>
+                </a>
+              </li>
+              <li class="sidebar__item-news">
+                <a href="" class="sidebar__item-news--link">
+                  <p class="sidebar__item-news--date">31 Maio 2020</p>
+                  <h3 class="sidebar__item-news--title">Resultado prévio do Processo Seletivo - Edital 001/2020</h3>
+                </a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="center">
+        <h2 class="footer__title-section">Mapa do Site</h2>
+        <div class="footer__wrapper">
+          <div class="footer__column">
+            <div class="footer__group">
+              <h3 class="footer__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <g id="Grupo_3058" data-name="Grupo 3058" transform="translate(-107 -119)">
+                    <path id="Caminho_1989" data-name="Caminho 1989" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(99.021 109)" fill="#a0aadc"/>
+                  </g>
+                </svg>
+                Cidade
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="cidade-municipio.html" class="footer__link">Município</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Histórico</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Executivo</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Projetos e Obras</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Calendários e Eventos</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Turismo e Lazer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__group">
+              <h3 class="footer__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <g id="Grupo_3058" data-name="Grupo 3058" transform="translate(-107 -119)">
+                    <path id="Caminho_1989" data-name="Caminho 1989" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(99.021 109)" fill="#a0aadc"/>
+                  </g>
+                </svg>
+                Administração
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">Estrutura Organizacional</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Gabinete</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Secretarias</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__column">
+            <div class="footer__group">
+              <h3 class="footer__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <g id="Grupo_3058" data-name="Grupo 3058" transform="translate(-107 -119)">
+                    <path id="Caminho_1989" data-name="Caminho 1989" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(99.021 109)" fill="#a0aadc"/>
+                  </g>
+                </svg>
+                Transparência
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">Transparência Municipal</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Transferência  do Estado</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Transferência  da União</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Minas Transparente</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Legislação</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Editais e Licitações</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__group">
+              <a href="" class="footer__link--second">Concursos</a>
+            </div>
+            <div class="footer__group">
+              <a href="" class="footer__link--second">Notícias</a>
+            </div>
+          </div>
+          <div class="footer__column">
+            <div class="footer__group">
+              <h3 class="footer__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <g id="Grupo_3058" data-name="Grupo 3058" transform="translate(-107 -119)">
+                    <path id="Caminho_1989" data-name="Caminho 1989" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(99.021 109)" fill="#a0aadc"/>
+                  </g>
+                </svg>
+                Mídias
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">Galeria de Fotos</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Eventos Realizados</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Vídeos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__group">
+              <h3 class="footer__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <g id="Grupo_3058" data-name="Grupo 3058" transform="translate(-107 -119)">
+                    <path id="Caminho_1989" data-name="Caminho 1989" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(99.021 109)" fill="#a0aadc"/>
+                  </g>
+                </svg>
+                Contato
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">Ouvidoria</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Telefones Úteis</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Fale com a Prefeitura</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__column">
+            <div class="footer__group">
+              <a href="" class="footer__link--second">Requerimentos e Publicações</a>
+            </div>
+            <div class="footer__group">
+              <h3 class="footer__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <g id="Grupo_3058" data-name="Grupo 3058" transform="translate(-107 -119)">
+                    <path id="Caminho_1989" data-name="Caminho 1989" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(99.021 109)" fill="#a0aadc"/>
+                  </g>
+                </svg>
+                Ações e Programas
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">Recadastramento</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Autorização RPS</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Contratação Temp. - Des Social</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Formulário de Requerimento</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__group">
+              <a href="" class="footer__link--second">E-sic</a>
+            </div>
+          </div>
+          <div class="footer__column">
+            <div class="footer__group">
+              <h3 class="footer__title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5.4" height="3.375" viewBox="0 0 5.4 3.375">
+                  <g id="Grupo_3058" data-name="Grupo 3058" transform="translate(-107 -119)">
+                    <path id="Caminho_1989" data-name="Caminho 1989" d="M10.916,13.265s0-.009.008-.014l2.356-2.6a.406.406,0,0,0,0-.531l0,0a.316.316,0,0,0-.24-.115H8.323a.32.32,0,0,0-.244.119h0a.406.406,0,0,0,0,.531l2.362,2.617a.313.313,0,0,0,.477,0Z" transform="translate(99.021 109)" fill="#a0aadc"/>
+                  </g>
+                </svg>
+                Portais
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="" class="footer__link">Portal do Fornecedor</a>
+                </li>
+                <li class="footer__item">
+                  Portal do Servidor
+                  <ul class="footer__list--second">
+                    <li class="footer__item">
+                      <a href="" class="footer__link">IPTU</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="" class="footer__link">Nota Fiscal Eletrônica</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="" class="footer__link">Plano Diretor</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Portal de Serviços</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Portal de Empregos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__group">
+              <a href="" class="footer__link--second">Webmail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <div class="center">
+        <div class="footer__wrapper--second">
+          <div class="footer__column--second">
+            <h3 class="footer__title--third">
+              Horários de atendimento
+            </h3>
+            <p class="footer__text">
+              Segunda a sexta: <strong>12hrs às 18hrs</strong> 
+            </p>
+            <p class="footer__text">
+              Final de semana: <strong>Fechado</strong>
+            </p>
+          </div>
+          <div class="footer__column--second">
+            <h3 class="footer__title--third">
+              Endereço
+            </h3>
+            <p class="footer__text">
+              Praça Cesário Alvim, 2 Bairro Centro
+            </p>
+          </div>
+          <div class="footer__column--second">
+            <h3 class="footer__title--third">
+              Formas de Contato
+            </h3>
+            <div class="footer__wrapper--third">
+              <div class="footer__group--second">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 33 33">
+                  <g id="Grupo_3056" data-name="Grupo 3056" transform="translate(-732 -556)">
+                    <g id="Layer_2" data-name="Layer 2" transform="translate(732 556)">
+                      <g id="phone">
+                        <rect id="Retângulo_927" data-name="Retângulo 927" width="33" height="33" fill="#18204a" opacity="0"/>
+                        <path id="Caminho_2000" data-name="Caminho 2000" d="M22.961,29.222A20.988,20.988,0,0,1,2,8.261,6.261,6.261,0,0,1,8.261,2a5.363,5.363,0,0,1,1.048.1,5.159,5.159,0,0,1,.98.245,1.361,1.361,0,0,1,.885,1.021l1.865,8.167a1.361,1.361,0,0,1-.354,1.252c-.177.191-.191.2-1.865,1.075a13.489,13.489,0,0,0,6.629,6.656c.885-1.688.9-1.7,1.089-1.878a1.361,1.361,0,0,1,1.252-.354l8.167,1.865a1.361,1.361,0,0,1,.98.885,5.907,5.907,0,0,1,.259.994,6.492,6.492,0,0,1,.082,1.034A6.261,6.261,0,0,1,22.961,29.222Z" transform="translate(0.722 0.722)" fill="#18204a"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                
+                <p class="footer__text">
+                  Telefone<br/>(32) 3252-7400
+                </p>
+              </div>
+              <div class="footer__group--second">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 28 22">
+                  <g id="Grupo_3057" data-name="Grupo 3057" transform="translate(-900 -565)">
+                    <path id="Icon_19_" d="M57.333,80H34.667A2.674,2.674,0,0,0,32,82.667V99.333A2.674,2.674,0,0,0,34.667,102H57.333A2.674,2.674,0,0,0,60,99.333V82.667A2.674,2.674,0,0,0,57.333,80ZM57,85.667,46,93,35,85.667V83l11,7.333L57,83Z" transform="translate(868 485)" fill="#18204a"/>
+                  </g>
+                </svg>
+                <p class="footer__text">
+                  E-mail<br/>contato@email.com
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__column--second">
+            <h3 class="footer__title--third">
+              Siga nas Redes Sociais
+            </h3>
+            <p class="footer__text">
+              Redes Sociais
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="center">
+        <div class="copyright__wrapper">
+          <div class="logo-footer">
+            <div class="logo-footer__group">
+              <img src="../images/simbulo.png" alt="Brasão Prefeitura de Santos Doumont" class="logo-footer__image">
+              <p class="logo-footer__text">Prefeitura Municipal <strong>de Santos Doumont</strong></p>
+            </div>
+          </div>
+          <p class="copyright__text">
+            Copyright Prefeitura Municipal de Santos Dumont - Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<script src="../scripts/slick.min.js"></script>
+<script src="../scripts/jquery.mask.min.js"></script>
+<script src="../scripts/minify/main.min.js"></script>
+
+<script>
+	//Chamando as Funções JavaScript Padrão
+</script>

@@ -451,3 +451,72 @@
 
   }
 }
+
+.card-intern{
+  @include flex;
+  background-color: #F7F7F7;
+  padding: 2.6rem 1.6rem;
+  transition: .3s ease;
+  border-radius: .8rem;
+
+  @include breakpoint(tablet){
+    padding: 2.6rem 1rem;
+  }
+
+
+  &:hover{
+    transform: translateY(-.5rem);
+
+    @include breakpoint(tablet-big){
+      transform: translateY(0);
+    }
+  }
+
+
+  &__link{
+    flex: 1;
+    @include flex;
+    @include justify-space-between;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: inherit;
+    
+
+  }
+
+  &__icon{
+    @include flex;
+    @include align-center;
+    @include justify-center;
+
+    margin-bottom: 2.1rem;
+
+    svg{
+      @include breakpoint(tablet){
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__title{
+    flex: 1;
+    // border: 1px solid #000;
+
+    @include flex;
+    @include align-center;
+    @include justify-center;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-black);
+    text-align: center;
+
+    @include breakpoint(tablet){
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+
+  }
+}
