@@ -261,6 +261,12 @@
       width: 12.6rem;
       margin-bottom: 2.4rem;
     }
+
+    &--third{
+      @extend .intern__btn;
+      width: 21rem;
+      margin-bottom: 2.4rem;
+    }
   }
 }
 

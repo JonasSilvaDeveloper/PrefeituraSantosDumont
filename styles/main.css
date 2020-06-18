@@ -2559,7 +2559,7 @@ button {
 .intern__editais {
   padding: 1.65rem 0;
 }
-.intern__btn, .intern__btn--second {
+.intern__btn, .intern__btn--second, .intern__btn--third {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -2578,21 +2578,25 @@ button {
   background-color: var(--color-second-blue);
 }
 @media (max-width: 600px) {
-  .intern__btn, .intern__btn--second {
+  .intern__btn, .intern__btn--second, .intern__btn--third {
     margin-top: 1.6rem;
   }
 }
-.intern__btn:hover, .intern__btn--second:hover {
+.intern__btn:hover, .intern__btn--second:hover, .intern__btn--third:hover {
   background-color: var(--color-second-orange);
 }
-.intern__btn svg, .intern__btn--second svg {
+.intern__btn svg, .intern__btn--second svg, .intern__btn--third svg {
   margin-left: .5rem;
 }
-.intern__btn svg path, .intern__btn--second svg path {
+.intern__btn svg path, .intern__btn--second svg path, .intern__btn--third svg path {
   fill: var(--color-white);
 }
 .intern__btn--second {
   width: 12.6rem;
+  margin-bottom: 2.4rem;
+}
+.intern__btn--third {
+  width: 21rem;
   margin-bottom: 2.4rem;
 }
 
