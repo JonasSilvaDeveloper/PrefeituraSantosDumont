@@ -56,6 +56,26 @@
       grid-gap: 1.6rem;
     }
 
+    &--second{
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-gap: 2.9rem;
+
+      @include breakpoint(tablet-big){
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
+
+    &--third{
+      display: grid;
+      grid-template-columns: 3fr 3fr 1fr;
+      grid-gap: 2.9rem;
+
+      @include breakpoint(tablet-big){
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
+
     &-flex{
       @include flex;
       @include align-end;

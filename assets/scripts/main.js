@@ -197,11 +197,28 @@ var portal = {
           field.mask(behavior.apply({}, arguments), options);
       }
     };
-    $('input[type=tel]').mask(behavior, options);
+    $('#form-tel').mask(behavior, options);
 
     $('#form-cnpj').mask('00.000.000/0000-00');
+    $('#form-telefone').mask('(00) 00000 - 0000');
+    $('#form-cel').mask('(00) 90000 - 0000');
 
     $('#form-fornecedor').submit(function(e){
+      $(this).find('.required').each(function(){
+        if($(this).val().length !== 0){
+          $(this).parent().find('.form__error').css('opacity','0');
+        }else{
+            e.preventDefault();
+          $(this).parent().find('.form__error').css('opacity','1');
+        }
+      })
+
+      $(this).find('.required').focus(function () {
+        $(this).parent().find('.form__error').css('opacity','0');
+      })
+    })
+
+    $('#form-emprego').submit(function(e){
       $(this).find('.required').each(function(){
         if($(this).val().length !== 0){
           $(this).parent().find('.form__error').css('opacity','0');
