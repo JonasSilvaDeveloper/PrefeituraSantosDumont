@@ -570,15 +570,18 @@
                 </div>
                 <div class="form__group">
                   <label for="form-name" class="form__label">Nome</label>
-                  <input type="text" id="form-name" class="form__input">
+                  <input type="text" id="form-name" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
                 <div class="form__group">
                   <label for="form-tel" class="form__label">Celular</label>
-                  <input type="tel" id="form-tel" class="form__input">
+                  <input type="tel" id="form-tel" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
                 <div class="form__group">
                   <label for="form-email" class="form__label">E-mail</label>
-                  <input type="email" id="form-email" class="form__input">
+                  <input type="email" id="form-email" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
                 <div class="form__group">
                   <label for="" class="form__label">Receber o status via celular/e-mail?</label>
@@ -588,7 +591,8 @@
                 </div>
                 <div class="form__group">
                   <label for="form-title" class="form__label">Título</label>
-                  <input type="text" id="form-title" class="form__input">
+                  <input type="text" id="form-title" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
               </div>
 
@@ -607,11 +611,13 @@
               <div class="form__row-flex">
                 <div class="form__group-50">
                   <label for="formAc-email" class="form__label">E-mail</label>
-                  <input type="text" id="formAc-email" class="form__input">
+                  <input type="text" id="formAc-email" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
                 <div class="form__group-30">
                   <label for="formAc-protocolo" class="form__label">Número do Protocolo</label>
-                  <input type="text" id="formAc-protocolo" class="form__input">
+                  <input type="text" id="formAc-protocolo" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
                 <div class="form__group-20">
                   <button type="submit" class="form__submit">Ver Protocolo</button>
@@ -961,5 +967,6 @@
 <script src="../scripts/minify/main.min.js"></script>
 
 <script>
-	//Chamando as Funções JavaScript Padrão
+  //Chamando as Funções JavaScript Padrão
+  contato.init();
 </script>

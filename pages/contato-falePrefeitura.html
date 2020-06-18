@@ -575,15 +575,18 @@
               <div class="form__row">
                 <div class="form__group">
                   <label for="form-name" class="form__label">Nome</label>
-                  <input type="text" id="form-name" class="form__input">
+                  <input type="text" id="form-name" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
                 <div class="form__group">
                   <label for="form-email" class="form__label">E-mail</label>
-                  <input type="email" id="form-email" class="form__input">
+                  <input type="email" id="form-email" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
                 <div class="form__group">
                   <label for="form-title" class="form__label">Título</label>
-                  <input type="text" id="form-title" class="form__input">
+                  <input type="text" id="form-title" class="form__input required">
+                  <p class="form__error">Preencha Corretamente!</p>
                 </div>
               </div>
 
@@ -937,5 +940,6 @@
 <script src="../scripts/minify/main.min.js"></script>
 
 <script>
-	//Chamando as Funções JavaScript Padrão
+  //Chamando as Funções JavaScript Padrão
+  contato.init();
 </script>

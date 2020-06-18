@@ -116,6 +116,17 @@
     }
   }
 
+  &__error{
+    position: absolute;
+    bottom: -1.7rem;
+    right: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-second-orange);
+    transition: .3s ease;
+    opacity: 0;
+  }
+
   &__label{
     display: block;
     font-size: 1.4rem;
