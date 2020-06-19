@@ -234,3 +234,112 @@ var portal = {
     })
   }
 }
+
+
+var calendar = {
+  init: function(){
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar-content');
+    
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        locale: 'pt-br',
+        timeZone: 'local',
+        plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
+        defaultView: 'dayGridMonth',
+        defaultDate: '2020-06-18',
+        displayEventTime: false,
+        header: {
+          left: 'prev',
+          center: 'title',
+          right: 'next'
+        },
+    
+        eventRender: function(info) {
+          var tooltip = new Tooltip(info.el, {
+            title: info.event.extendedProps.description,
+            content: info.event.extendedProps.description,
+            html: 'true',
+            placement: 'top',
+            trigger: 'hover',
+            container: 'body',
+    
+          });
+        },
+        events: [
+          {
+            title: 'Nome do Evento',
+            description: '<strong>Nome do Evento</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2020-06-16',
+            className: 'evento'
+          },
+          {
+            title: 'Nome do Evento',
+            description: '<strong>Nome do Evento</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2020-06-17',
+            className: 'evento'
+          },
+          {
+            title: 'Corpus Christi',
+            description: '<strong>Corpus Christi</strong><br>Feriado Nacional',
+            start: '2020-06-20',
+            className: 'feriado'
+          },
+
+          {
+            title: 'Ponto Facultativo',
+            description: '<strong>Ponto Facultativo</strong><br>Ponto Facultativo',
+            start: '2020-06-21',
+            className: 'facultativo'
+          },
+          {
+            title: 'Nome do Evento',
+            description: '<strong>Nome do Evento</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2020-06-22T07:30:00',
+            end: '2020-06-23T17:30:00',
+            className: 'evento-long'
+          },
+          
+          {
+            title: 'Nome do Evento',
+            description: '<strong>Nome do Evento</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2020-06-25',
+            className: 'evento'
+          },
+          {
+            title: 'Aula 2',
+            description: '<strong>Aula 2</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2019-08-19',
+            className: 'aula'
+          },
+          {
+            title: 'Aula 3',
+            description: '<strong>Aula 3</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2019-08-19',
+            className: 'aula'
+          },
+          {
+            title: 'Aula 1',
+            description: '<strong>Aula 1</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2019-08-26',
+            className: 'aula'
+          },
+          {
+            title: 'Aula 2',
+            description: '<strong>Aula 2</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2019-08-26',
+            className: 'aula'
+          },
+          {
+            title: 'Evento 2',
+            description: '<strong>Evento 2</strong><br>Horário: 16h | Local: Nome do local',
+            start: '2019-08-20T07:30:00',
+            end: '2019-08-21T17:30:00',
+            className: 'evento'
+          }
+        ]
+      });
+    
+      calendar.render();
+    });
+  }
+}

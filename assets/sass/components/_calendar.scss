@@ -1,3 +1,222 @@
+.calendar{
+  flex: 1;
+  margin-right: 2.4rem;
+
+  @include breakpoint(tablet-big){
+    margin-right: 0;
+  }
+
+  &__legend{
+    @include flex;
+    @include align-center;
+
+    margin: 3rem 0 5rem;
+
+    padding-bottom: 3.7rem;
+    border-bottom: 1px solid #ECECEC;
+
+    @include breakpoint(tablet){
+      @include align-start;
+      flex-direction: column;
+    }
+  }
+
+  &__text{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-black);
+  }
+
+  &__item{
+    position: relative;
+    padding-left: 2.3rem;
+
+    &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 1.3rem;
+        height: 1.3rem;
+        border: 2px solid;
+        border-radius: .4rem;
+
+        @include breakpoint(tablet){
+          width: .8rem;
+          height: .8rem;
+        }
+    }
+
+    &-municipal{
+      @extend .calendar__item;
+      margin-right: 3.4rem;
+
+      @include breakpoint(tablet){
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      
+      &:before{
+        border-color: var(--color-black);
+        background-color: var(--color-black);
+      }
+    }
+    &-nacional{
+      @extend .calendar__item;
+      margin-right: 3.4rem;
+
+      @include breakpoint(tablet){
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      
+      &:before{
+        border-color: var(--color-second-blue);
+        background-color: var(--color-second-blue);
+      }
+    }
+    &-reparticao{
+      @extend .calendar__item;
+      margin-right: 3.4rem;
+
+      @include breakpoint(tablet){
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      
+      &:before{
+        border-color: var(--color-second-orange);
+        background-color: var(--color-second-orange);
+      }
+    }
+    &-evento{
+      @extend .calendar__item;
+      
+      &:before{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border-color: var(--color-second-blue);
+        background-color: var(--color-second-blue);
+
+        @include breakpoint(tablet){
+          width: .8rem;
+          height: .8rem;
+        }
+      }
+    }
+  }
+
+  &-details{
+
+    &__wrapper{
+      @include flex;
+
+      @include breakpoint(mobile){
+        flex-direction: column;
+      }
+    }
+
+    &__item{
+      @include flex;
+      min-height: 17.8rem;
+
+      background-color: #f7f7f7;
+      border-radius: .4rem;
+
+      @include breakpoint(mobile){
+        flex-direction: column;
+      }
+  
+      &:not(:last-child){
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    &__wrapper{
+      @include flex;
+    }
+
+    &__photo{
+      flex: 0 0 30%;
+
+      @include breakpoint(tablet){
+        flex: 0 0 40%;
+      }
+    }
+
+    &__image{
+      display: block;
+      width: 100%;
+      height: 100%;
+      
+      border-radius: .4rem;
+    }
+
+    &__content{
+      flex: 1;
+
+      @include flex;
+      @include justify-space-between;
+  
+      flex-direction: column;
+  
+      padding: 1.8rem 2.4rem;
+  
+      @include breakpoint(mobile){
+        order: 1;
+        padding: 1.6rem 1.5rem;
+      }
+    }
+
+    &__top{
+      margin-bottom: 1rem;
+    }
+
+    &__title{
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.6rem;
+      color: var(--color-black);
+      margin-bottom: 1rem;
+    }
+
+    &__text{
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      color: var(--color-black);
+    }
+
+    &__date{
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: var(--color-gray);
+      padding-left: 1.8rem;
+
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: .8rem;
+        height: .8rem;
+        border-radius: 50%;
+        background-color: var(--color-second-blue);
+      }
+    }
+
+
+  }
+}
+
+// UTILS CALENDAR
 .fc-day.fc-widget-content.fc-sun.fc-past,
 .fc-day.fc-widget-content.fc-sun.fc-future{
   background-color: #ECECEC!important;
@@ -10,6 +229,25 @@
   border: none;
 }
 
+.fc-event:hover{
+  color:var(--color-second-blue);
+}
+
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number{
+  float: left;
+  padding-top: .7rem;
+  padding-left: 1.6rem;
+
+  @include breakpoint(tablet){
+    padding-top: .3rem;
+  padding-left: .5rem;
+  }
+}
+
+.fc-scroller.fc-day-grid-container {
+  height: auto !important; 
+}
+
 .fc td.fc-today{
   border: none;
   background-color: #f4f4f4!important;
@@ -18,17 +256,46 @@
 .fc table {
   border-collapse: initial;
   border-spacing: 5px;
+
+  @include breakpoint(tablet){
+    border-spacing: 3px;
+  }
 }
 
 .fc-day{
   background-color: #F7F7F7;
   border-radius: 4px;
+  min-height: 40px;
 }
 
 .fc td{
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2rem;
+
+  @include breakpoint(tablet){
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+.fc-button{
+  width: 3.2rem;
+  height: 3.2rem;
+  border: none;
+  padding: 0;
+  font-size: 1.4rem;
+  transition: .3s ease;
+  outline: 0;
+  cursor: pointer;
+
+  &:hover{
+    background-color: var(--color-second-orange);
+
+    @include breakpoint(tablet){
+      background-color: var(--color-second-blue);
+    }
+  }
 }
 
 .fc-button-primary{
@@ -42,6 +309,11 @@
   line-height: 2.8rem;
   color: var(--color-black);
   text-transform: uppercase;
+
+  @include breakpoint(tablet){
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
 }
 
 .fc-row.fc-widget-header{
@@ -62,4 +334,226 @@
     color: var(--color-gray);
     text-transform: capitalize;
   }
+}
+
+.evento{
+  margin: 0 1.6rem;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  color: var(--color-black);
+  transition: .3s ease;
+  cursor: pointer;
+
+  @include breakpoint(tablet){
+    margin: 0 .5rem;
+  }
+
+  &:hover{
+    
+    &:before{
+      background-color: var(--color-second-orange);
+    }
+  }
+  
+  .fc-content{
+    span{
+      margin-left: 1rem;
+    }
+  }
+
+  &:before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: var(--color-second-blue);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: .3s ease;
+  }
+
+  &-long{
+    @extend .evento;
+    border: 1px solid var(--color-second-blue);
+
+    &:hover{
+      border-color: var(--color-second-orange);
+    }
+
+    &:before{
+      left: .2rem;
+    }
+
+  }
+}
+
+.feriado{
+  border: 1px solid var(--color-second-blue);
+  background-color: var(--color-second-blue);
+  color: var(--color-white);
+  transition: .3s ease;
+  cursor: pointer;
+  margin:0 1.6rem;
+
+  .fc-title{
+    color: var(--color-white);
+  }
+
+  @include breakpoint(tablet){
+    margin:0 .5rem;
+  }
+}
+
+.facultativo{
+  border: 1px solid var(--color-second-orange);
+  background-color: var(--color-second-orange);
+  color: var(--color-white);
+  transition: .3s ease;
+  cursor: pointer;
+  margin:0 1.6rem;
+
+  .fc-title{
+    color: var(--color-white);
+  }
+
+  @include breakpoint(tablet){
+    margin:0 .5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fc-toolbar.fc-header-toolbar {
+    display: flex;
+    flex-wrap: wrap; 
+  } 
+
+  button.fc-prevYear-button.fc-button.fc-button-primary:after, 
+  button.fc-prev-button.fc-button.fc-button-primary:after, 
+  button.fc-next-button.fc-button.fc-button-primary:before, 
+  button.fc-nextYear-button.fc-button.fc-button-primary:before {
+    display: none; 
+  }
+
+  th.fc-day-header {
+    font-size: 1.2rem !important; 
+  }
+}
+
+.popper, 
+.tooltip {
+  position: absolute;
+  z-index: 9999;
+  background-color: #f7f7f7;
+  color: var(--color-black);
+  width: 295px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  top: 0px !important; 
+}
+
+.popper .popper__arrow,
+.tooltip .tooltip-arrow  {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px; 
+  border-color: #ffffff;
+}
+
+.popper[x-placement^="top"], 
+.tooltip[x-placement^="top"] {
+  margin-bottom: 5px; 
+}
+
+.popper[x-placement^="top"] .popper__arrow, 
+.tooltip[x-placement^="top"] .tooltip-arrow {
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+.popper[x-placement^="bottom"],
+.tooltip[x-placement^="bottom"] {
+  margin-top: 5px; 
+}
+
+.tooltip[x-placement^="bottom"] .tooltip-arrow,
+.popper[x-placement^="bottom"] .popper__arrow  {
+  border-width: 0 5px 5px 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+.tooltip[x-placement^="right"],
+.popper[x-placement^="right"] {
+  margin-left: 5px; 
+}
+
+.popper[x-placement^="right"] .popper__arrow,
+.tooltip[x-placement^="right"] .tooltip-arrow  {
+  border-width: 5px 5px 5px 0;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0; 
+}
+
+.popper[x-placement^="left"], 
+.tooltip[x-placement^="left"] {
+  margin-right: 5px; 
+}
+
+.popper[x-placement^="left"] .popper__arrow,
+.tooltip[x-placement^="left"] .tooltip-arrow  {
+  border-width: 5px 0 5px 5px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0; 
+}
+
+.style5 .tooltip {
+  background: #1E252B;
+  color: #FFFFFF;
+  max-width: 200px;
+  width: auto;
+  font-size: 0.8rem;
+  padding: 0.5em 1em; 
+}
+
+.style5 .tooltip .tooltip-arrow {
+  border-color: #1E252B; 
+}
+
+.tooltip.top {
+  margin-top: -10px; 
+}
+
+.tooltip-inner strong {
+  font-weight: bold;
+  margin-bottom: 1rem; 
 }

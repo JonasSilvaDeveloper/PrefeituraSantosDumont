@@ -5,87 +5,9 @@
 	<meta name="author" content="AM4 - A Internet de Resultados" />
 	<meta name="description" content=""/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <link href="https://unpkg.com/@fullcalendar/core@4.4.2/main.min.css" rel="stylesheet">
 
-  <script src="https://unpkg.com/@fullcalendar/core@4.4.2/main.min.js"></script>
-  <script src="https://unpkg.com/@fullcalendar/daygrid@4.4.2/main.min.js"></script>
-
-  <script>
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      locale: 'pt-BR',
-      plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
-      defaultView: 'dayGridMonth',
-      defaultDate: '2020-06-07',
-      titleFormat: { // will produce something like "Tuesday, September 18, 2018"
-        month: 'long',
-        year: 'numeric',
-      },
-      header: {
-        left: 'prev',
-        center: 'title',
-        right: 'next'
-      },
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2020-06-01'
-        },
-        {
-          title: 'Long Event',
-          start: '2020-06-07',
-          end: '2020-06-10'
-        },
-        {
-          groupId: '999',
-          title: 'Repeating Event',
-          start: '2020-06-09T16:00:00'
-        },
-        {
-          groupId: '999',
-          title: 'Repeating Event',
-          start: '2020-06-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2020-06-11',
-          end: '2020-06-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2020-06-12T10:30:00',
-          end: '2020-06-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2020-06-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2020-06-12T14:30:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2020-06-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2020-06-28'
-        }
-      ]
-    });
-
-    calendar.render();
-  });
-
-  </script>
+  <link rel="stylesheet" href="../assets/fullcalendar/core/main.min.css">
+  <link rel="stylesheet" href="../assets/fullcalendar/daygrid/main.min.css">
 
 	<link rel="stylesheet" href="../styles/slick.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -632,9 +554,97 @@ document.addEventListener('DOMContentLoaded', function() {
     <section class="page">
       <div class="center">
         <div class="page__wrapper">
-          <div class="project">
-            <div class="calendar" id="calendar">
-              CALENDARIO
+          <div class="calendar">
+            <div class="calendar-content" id="calendar-content">
+            </div>
+            <div class="calendar__legend">
+              <div class="calendar__item-municipal">
+                <p class="calendar__text">Feriado Municipal</p>
+              </div>
+              <div class="calendar__item-nacional">
+                <p class="calendar__text">Feriado Nacional</p>
+              </div>
+              <div class="calendar__item-reparticao">
+                <p class="calendar__text">Repartições Públicas</p>
+              </div>
+              <div class="calendar__item-evento">
+                <p class="calendar__text">Evento</p>
+              </div>
+            </div>
+
+            <div class="calendar-details">
+              <div class="calendar-details__item">
+                <div class="calendar-details__wrapper">
+                  <div class="calendar-details__content">
+                    <div class="calendar-details__top">
+                      <h2 class="calendar-details__title">Nome do Evento</h2>
+                      <p class="calendar-details__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                      </p>
+                    </div>
+                    <div class="calendar-details__bottom">
+                      <p class="calendar-details__date">16 à 17 de Junho</p>
+                    </div>
+                  </div>
+                  <div class="calendar-details__photo">
+                    <img src="../images/news1.png" alt="Photo in Event" class="calendar-details__image">
+                  </div>
+                </div>
+              </div>
+              <div class="calendar-details__item">
+                <div class="calendar-details__wrapper">
+                  <div class="calendar-details__content">
+                    <div class="calendar-details__top">
+                      <h2 class="calendar-details__title">Nome do Evento</h2>
+                      <p class="calendar-details__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                      </p>
+                    </div>
+                    <div class="calendar-details__bottom">
+                      <p class="calendar-details__date">16 à 17 de Junho</p>
+                    </div>
+                  </div>
+                  <!-- <div class="calendar-details__photo">
+                    <img src="../images/news1.png" alt="Photo in Event" class="calendar-details__image">
+                  </div> -->
+                </div>
+              </div>
+              <div class="calendar-details__item">
+                <div class="calendar-details__wrapper">
+                  <div class="calendar-details__content">
+                    <div class="calendar-details__top">
+                      <h2 class="calendar-details__title">Nome do Evento</h2>
+                      <p class="calendar-details__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                      </p>
+                    </div>
+                    <div class="calendar-details__bottom">
+                      <p class="calendar-details__date">16 à 17 de Junho</p>
+                    </div>
+                  </div>
+                  <div class="calendar-details__photo">
+                    <img src="../images/news1.png" alt="Photo in Event" class="calendar-details__image">
+                  </div>
+                </div>
+              </div>
+              <div class="calendar-details__item">
+                <div class="calendar-details__wrapper">
+                  <div class="calendar-details__content">
+                    <div class="calendar-details__top">
+                      <h2 class="calendar-details__title">Nome do Evento</h2>
+                      <p class="calendar-details__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                      </p>
+                    </div>
+                    <div class="calendar-details__bottom">
+                      <p class="calendar-details__date">16 à 17 de Junho</p>
+                    </div>
+                  </div>
+                  <!-- <div class="calendar-details__photo">
+                    <img src="../images/news1.png" alt="Photo in Event" class="calendar-details__image">
+                  </div> -->
+                </div>
+              </div>
             </div>
           </div>
           <div class="sidebar">
@@ -996,8 +1006,18 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 <script src="../scripts/slick.min.js"></script>
 <script src="../scripts/jquery.mask.min.js"></script>
+
+<!-- IMPORTAÇÕES DO CALENDARIO -->
+<script src="../assets/fullcalendar/core/main.min.js"></script>
+<script src="../assets/fullcalendar/daygrid/main.min.js"></script>
+<script src="../assets/fullcalendar/core/locales/pt-br.js"></script>
+<script src="../assets/fullcalendar/scripts/popper.min.js"></script>
+<script src="../assets/fullcalendar/scripts/tooltip.min.js"></script>
+
 <script src="../scripts/minify/main.min.js"></script>
 
 <script>
-	//Chamando as Funções JavaScript Padrão
+  //Chamando as Funções JavaScript Padrão
+  
+  calendar.init();
 </script>
