@@ -2050,6 +2050,70 @@ input[type=number] {
   background-color: var(--color-second-orange);
 }
 
+.fc-day.fc-widget-content.fc-sun.fc-past,
+.fc-day.fc-widget-content.fc-sun.fc-future {
+  background-color: #ECECEC !important;
+}
+
+.fc-day.fc-widget-content.fc-sat.fc-past,
+.fc-day.fc-widget-content.fc-sat.fc-future {
+  background-color: #ECECEC !important;
+  border: none;
+}
+
+.fc td.fc-today {
+  border: none;
+  background-color: #f4f4f4 !important;
+}
+
+.fc table {
+  border-collapse: initial;
+  border-spacing: 5px;
+}
+
+.fc-day {
+  background-color: #F7F7F7;
+  border-radius: 4px;
+}
+
+.fc td {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.fc-button-primary {
+  background-color: var(--color-second-blue);
+  border-color: var(--color-second-blue);
+}
+
+.fc-toolbar h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+.fc-row.fc-widget-header {
+  padding: 2.1rem 0 1rem;
+}
+
+.fc td {
+  border: none;
+}
+
+.fc th {
+  border: none;
+}
+.fc th span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--color-gray);
+  text-transform: capitalize;
+}
+
 .slide {
   margin: 4rem 0;
 }
