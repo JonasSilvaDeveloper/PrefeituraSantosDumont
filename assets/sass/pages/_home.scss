@@ -1,3 +1,28 @@
+.pub{
+  margin: 4rem 0;
+  &__content{
+
+  }
+
+  &__image{
+    width: 100%;
+    display: block;
+
+    @include breakpoint(tablet){
+      display: none;
+    }
+
+    &--mobile{
+      width: 100%;
+      display: none;
+
+      @include breakpoint(tablet){
+        display: block;
+      }
+    }
+  }
+}
+
 .slide{
   margin: 4rem 0; 
 
@@ -248,6 +273,19 @@
       @include breakpoint(tablet-big){
         flex: 0 0 100%;
       }
+
+      .list-service{
+
+        &__item{
+          padding: .8rem 2rem;
+          border-radius: .4rem;
+          background-color: var(--color-white);
+
+          &:not(:last-child){
+            margin-bottom: .8rem;
+          }
+        }
+      }
     }
   }
 
@@ -349,7 +387,11 @@
   &__item{
     
     &:not(:last-child){
-      margin-bottom: 1rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .card-bidding{
+      background-color: var(--color-white);
     }
   }
 }

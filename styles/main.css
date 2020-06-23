@@ -39,6 +39,43 @@ button {
   margin: 0 auto;
 }
 
+.scroll {
+  position: fixed;
+  bottom: 2.4rem;
+  right: 2.4rem;
+  z-index: 10;
+}
+@media (max-width: 1000px) {
+  .scroll {
+    bottom: 1.6rem;
+    right: 1.6rem;
+  }
+}
+@media (max-width: 600px) {
+  .scroll {
+    bottom: .7rem;
+    right: .7rem;
+  }
+}
+.scroll__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: orangered;
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+}
+@media (max-width: 600px) {
+  .scroll__link {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -944,7 +981,6 @@ input[type=number] {
   border-top: 2px solid var(--color-second-blue);
   background-color: var(--color-white);
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  padding: 2rem 2.4rem;
 }
 .menu__wrapper {
   display: -ms-grid;
@@ -952,6 +988,13 @@ input[type=number] {
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
   grid-gap: 1rem;
+}
+.menu__column {
+  padding: 2rem 2.1rem;
+}
+.menu__column:nth-child(even) {
+  background-color: #F7F7F7;
+  border-top: 1px solid var(--color-second-blue);
 }
 .menu__title {
   font-size: 1.2rem;
@@ -1452,6 +1495,7 @@ input[type=number] {
       flex-direction: column;
   min-height: 20.5rem;
   padding: 2.7rem 3.2rem;
+  border-radius: .4rem;
 }
 @media (max-width: 768px) {
   .card-bidding {
@@ -2588,6 +2632,28 @@ input[type=number] {
   margin-bottom: 1rem;
 }
 
+.pub {
+  margin: 4rem 0;
+}
+.pub__image {
+  width: 100%;
+  display: block;
+}
+@media (max-width: 768px) {
+  .pub__image {
+    display: none;
+  }
+}
+.pub__image--mobile {
+  width: 100%;
+  display: none;
+}
+@media (max-width: 768px) {
+  .pub__image--mobile {
+    display: block;
+  }
+}
+
 .slide {
   margin: 4rem 0;
 }
@@ -2832,6 +2898,14 @@ input[type=number] {
         flex: 0 0 100%;
   }
 }
+.bidding__wrapper .sidebar .list-service__item {
+  padding: .8rem 2rem;
+  border-radius: .4rem;
+  background-color: var(--color-white);
+}
+.bidding__wrapper .sidebar .list-service__item:not(:last-child) {
+  margin-bottom: .8rem;
+}
 .bidding__content {
   -ms-flex: 1;
       flex: 1;
@@ -2915,7 +2989,10 @@ input[type=number] {
   list-style: none;
 }
 .bidding__item:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 2.4rem;
+}
+.bidding__item .card-bidding {
+  background-color: var(--color-white);
 }
 
 .page {
