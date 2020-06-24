@@ -3341,6 +3341,9 @@ input[type=number] {
 .mayors {
   margin-top: 4rem;
 }
+.mayors--adm {
+  margin-right: 2.4rem;
+}
 .mayors__content {
   margin-top: 3.4rem;
 }
@@ -3421,18 +3424,24 @@ input[type=number] {
 .mayors__top {
   margin-bottom: 1.6rem;
 }
-.mayors__date {
+.mayors__date, .mayors__date--second {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
   color: var(--color-gray);
 }
-.mayors__name {
+.mayors__date--second {
+  margin-bottom: 1rem;
+}
+.mayors__name, .mayors__name--second {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.6rem;
   color: var(--color-black);
   margin-bottom: 1rem;
+}
+.mayors__name--second {
+  margin-bottom: 0;
 }
 .mayors__description {
   font-size: 1.4rem;
@@ -3471,6 +3480,15 @@ input[type=number] {
   .project {
     margin-right: 0;
   }
+}
+.project__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
 }
 .project__item {
   background-color: #f7f7f7;
@@ -3603,6 +3621,72 @@ input[type=number] {
   width: 100%;
   height: 100%;
   border-radius: .4rem;
+}
+
+.shared__list {
+  list-style: none;
+}
+.shared__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.shared__item:hover .shared__sublist {
+  opacity: 1;
+  pointer-events: auto;
+}
+.shared__icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.shared__icon svg {
+  margin-left: .5rem;
+}
+.shared__icon svg path {
+  fill: var(--color-primary-blue);
+}
+.shared__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--color-primary-blue);
+  cursor: pointer;
+}
+.shared__sublist {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  opacity: 0;
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: .4rem;
+  transition: .3s ease;
+  pointer-events: none;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.shared__subitem svg path {
+  transition: .3s ease;
+  fill: var(--color-primary-blue);
+}
+.shared__subitem:not(:last-child) {
+  margin-right: 1.6rem;
+}
+.shared__link {
+  display: block;
+  text-decoration: none;
+}
+.shared__link:hover svg path {
+  fill: var(--color-second-orange);
 }
 
 .tourism {
