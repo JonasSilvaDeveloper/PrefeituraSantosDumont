@@ -242,9 +242,19 @@
 }
 
 .files{
-  width: 100%;
+  width: 50%;
+
+  @include breakpoint(tablet-big){
+    width: 100%;
+  }
   &__input{
     @include flex;
+
+
+    @include breakpoint(mobile){
+      display: block;
+    }
+
     &--false{
       display: none;
     }
@@ -252,6 +262,10 @@
 
   &__name{
     @extend .form__input;
+
+    @include breakpoint(mobile){
+      margin-bottom: 1rem;
+    }
   }
 
   &__btn{

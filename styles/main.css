@@ -118,6 +118,9 @@ input[type=number] {
   opacity: 1 !important;
 }
 
+.contrast {
+  background: black !important;
+}
 .contrast nav,
 .contrast div,
 .contrast li,
@@ -186,6 +189,15 @@ input[type=number] {
   background: black !important;
   border: 1px solid white !important;
   color: white !important;
+}
+.contrast .navigation__list {
+  background: black !important;
+}
+.contrast .submenu {
+  background: black !important;
+}
+.contrast .submenu--second {
+  background: black !important;
 }
 
 .index {
@@ -907,6 +919,9 @@ input[type=number] {
     left: 0;
     transform: initial;
     width: 100%;
+    box-shadow: initial;
+    border-top: none;
+    padding: 0 1rem;
   }
 }
 .submenu--second {
@@ -2104,14 +2119,29 @@ input[type=number] {
 }
 
 .files {
-  width: 100%;
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  .files {
+    width: 100%;
+  }
 }
 .files__input {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 600px) {
+  .files__input {
+    display: block;
+  }
+}
 .files__input--false {
   display: none;
+}
+@media (max-width: 600px) {
+  .files__name {
+    margin-bottom: 1rem;
+  }
 }
 .files__btn {
   cursor: pointer;
@@ -3781,6 +3811,11 @@ input[type=number] {
   display: flex;
   padding: 2.5rem 0;
 }
+@media (max-width: 600px) {
+  .secretary__item {
+    display: block;
+  }
+}
 .secretary__item:first-child {
   border-top: 1px solid #ECECEC;
 }
@@ -3807,10 +3842,13 @@ input[type=number] {
 }
 @media (max-width: 600px) {
   .secretary__icon {
-    -ms-flex: 0 0 9rem;
-        flex: 0 0 9rem;
     -ms-flex-align: start;
     align-items: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex: 0 0 9rem;
+        flex: 0 0 9rem;
+    margin-bottom: 1.6rem;
   }
 }
 .secretary__info {

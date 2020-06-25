@@ -831,6 +831,10 @@
   &__item{
     @include flex;
 
+    @include breakpoint(mobile){
+      display: block;
+    }
+
     padding: 2.5rem 0;
 
     &:first-child{
@@ -860,8 +864,11 @@
     @include justify-center;
 
     @include breakpoint(mobile){
-      flex: 0 0 9rem;
       @include align-start;
+      @include justify-start;
+      flex: 0 0 9rem;
+
+      margin-bottom: 1.6rem;
     }
   }
 
@@ -875,6 +882,7 @@
     line-height: 2.6rem;
     color: var(--color-black);
     margin-bottom: 1rem;
+
   }
 
   &__text{

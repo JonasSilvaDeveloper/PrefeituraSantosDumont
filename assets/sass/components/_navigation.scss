@@ -308,6 +308,10 @@
     left: 0;
     transform: initial;
     width: 100%;
+    box-shadow: initial;
+
+    border-top: none;
+    padding: 0 1rem;
   }
 
   &--second{
