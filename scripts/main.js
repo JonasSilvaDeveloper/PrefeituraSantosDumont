@@ -188,6 +188,11 @@ var contato = {
 
 var portal = {
   init: function(){
+    $('.files__input--false').change(function() {
+      var nome = $(this)[0].files[0].name;
+      $(this).parent().find('.files__name').html(nome);
+    });
+    
     //Mascara Telefone
     var behavior = function (val) {
       return val.replace(/\D/g, '').length === 11 ? '(00) 00000 - 0000' : '(00) 0000 - 00009';

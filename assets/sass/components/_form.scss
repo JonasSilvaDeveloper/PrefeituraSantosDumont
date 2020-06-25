@@ -240,3 +240,22 @@
     }
   }
 }
+
+.files{
+  width: 100%;
+  &__input{
+    @include flex;
+    &--false{
+      display: none;
+    }
+  }
+
+  &__name{
+    @extend .form__input;
+  }
+
+  &__btn{
+    @extend .form__submit;
+    cursor: pointer;
+  }
+}

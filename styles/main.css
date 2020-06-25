@@ -2013,11 +2013,11 @@ input[type=number] {
     margin-bottom: 1.6rem;
   }
 }
-.form__group-20 .form__submit {
+.form__group-20 .form__submit, .form__group-20 .files__btn {
   max-width: none;
 }
 @media (max-width: 768px) {
-  .form__group-20 .form__submit {
+  .form__group-20 .form__submit, .form__group-20 .files__btn {
     max-width: 13rem;
   }
 }
@@ -2039,7 +2039,7 @@ input[type=number] {
   color: var(--color-primary-blue);
   margin-bottom: .5rem;
 }
-.form__input, .form__select, .form__textarea {
+.form__input, .form__select, .form__textarea, .files__name {
   box-sizing: border-box;
   width: 100%;
   padding: .9rem .8rem;
@@ -2066,7 +2066,7 @@ input[type=number] {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.form__submit {
+.form__submit, .files__btn {
   max-width: 13rem;
   width: 100%;
   text-align: center;
@@ -2081,7 +2081,7 @@ input[type=number] {
   background-color: var(--color-second-blue);
   color: var(--color-white);
 }
-.form__submit:hover {
+.form__submit:hover, .files__btn:hover {
   background-color: var(--color-second-orange);
 }
 .form__submit--second {
@@ -2101,6 +2101,20 @@ input[type=number] {
 }
 .form__submit--second:hover {
   background-color: var(--color-second-orange);
+}
+
+.files {
+  width: 100%;
+}
+.files__input {
+  display: -ms-flexbox;
+  display: flex;
+}
+.files__input--false {
+  display: none;
+}
+.files__btn {
+  cursor: pointer;
 }
 
 .calendar {
