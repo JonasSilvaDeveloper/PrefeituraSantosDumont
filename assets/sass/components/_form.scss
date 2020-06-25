@@ -27,6 +27,12 @@
 
   &__section{
     margin-bottom: 4rem;
+
+    &--second{
+      padding-bottom: 3.1rem;
+      margin-bottom: 2.4rem;
+      border-bottom: 1px solid #F7F7F7;
+    }
   }
 
   &__title{
@@ -44,6 +50,11 @@
       color: var(--color-black);
       margin-bottom: 2.7rem;
     }
+
+    &--third{
+      @extend .form__title;
+      text-transform: initial;
+    }
   }
 
   &__row{
@@ -54,6 +65,22 @@
     @include breakpoint(tablet){
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 1.6rem;
+    }
+
+    &-estagio{
+      @extend .form__row;
+      margin-top: 2.4rem;
+    }
+
+    &-50{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2.9rem;
+
+      @include breakpoint(tablet){
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.6rem;
+      }
     }
 
     &--second{
@@ -96,6 +123,7 @@
     position: relative;
 
     &--second{
+      position: relative;
       margin: 2.4rem 0;
     }
 

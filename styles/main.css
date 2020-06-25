@@ -1916,7 +1916,12 @@ input[type=number] {
 .form__section {
   margin-bottom: 4rem;
 }
-.form__title {
+.form__section--second {
+  padding-bottom: 3.1rem;
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid #F7F7F7;
+}
+.form__title, .form__title--third {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
@@ -1931,7 +1936,10 @@ input[type=number] {
   color: var(--color-black);
   margin-bottom: 2.7rem;
 }
-.form__row {
+.form__title--third {
+  text-transform: initial;
+}
+.form__row, .form__row-estagio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -1939,7 +1947,24 @@ input[type=number] {
   grid-gap: 2.9rem;
 }
 @media (max-width: 768px) {
-  .form__row {
+  .form__row, .form__row-estagio {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.6rem;
+  }
+}
+.form__row-estagio {
+  margin-top: 2.4rem;
+}
+.form__row-50 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.9rem;
+}
+@media (max-width: 768px) {
+  .form__row-50 {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.6rem;
@@ -1993,6 +2018,7 @@ input[type=number] {
   position: relative;
 }
 .form__group--second {
+  position: relative;
   margin: 2.4rem 0;
 }
 .form__group-50 {
