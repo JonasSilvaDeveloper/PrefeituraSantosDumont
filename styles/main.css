@@ -2028,11 +2028,11 @@ input[type=number] {
     margin-bottom: 1.6rem;
   }
 }
-.form__group-20 .form__submit, .form__group-20 .files__btn {
+.form__group-20 .form__submit, .form__group-20 .files__btn, .form__group-20 .page__btn {
   max-width: none;
 }
 @media (max-width: 768px) {
-  .form__group-20 .form__submit, .form__group-20 .files__btn {
+  .form__group-20 .form__submit, .form__group-20 .files__btn, .form__group-20 .page__btn {
     max-width: 13rem;
   }
 }
@@ -2081,7 +2081,7 @@ input[type=number] {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.form__submit, .files__btn {
+.form__submit, .files__btn, .page__btn {
   max-width: 13rem;
   width: 100%;
   text-align: center;
@@ -2096,7 +2096,7 @@ input[type=number] {
   background-color: var(--color-second-blue);
   color: var(--color-white);
 }
-.form__submit:hover, .files__btn:hover {
+.form__submit:hover, .files__btn:hover, .page__btn:hover {
   background-color: var(--color-second-orange);
 }
 .form__submit--second {
@@ -3168,6 +3168,10 @@ input[type=number] {
   width: 100%;
   height: 100%;
   border-radius: .4rem;
+}
+.page__more {
+  margin: 5rem 0;
+  text-align: center;
 }
 
 .intern {
